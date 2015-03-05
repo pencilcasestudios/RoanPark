@@ -20,4 +20,21 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  application:
+    client:
+      email: "lands@roanpark.co.zm"
+      facebook_url: "https://www.facebook.com/roanpark"
+      name: "Roan Park"
+      phone:
+        number_1: "+260 211 257 275"
+        number_2: "+260 966 744 308"
+      fax: "+260 211 253 205"
+      tagline: "Limited plots available"
+      twitter_url: "http://twitter.com/RoanPark"
+    developer:
+      name: "Pencil Case Studios"
+      url: "http://pencilcasestudios.com"
+    name: "Roan Park"
+    meta_tags:
+      description: "Roan Park"
+      keywords: "roan, park, galaunia, farms, limited, real, estate, project, housing, lusaka, zambia"
