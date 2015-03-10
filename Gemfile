@@ -64,8 +64,11 @@ gem 'meta-tags', '~> 2.0.0'
 gem 'bundler', '>= 1.7.0'
 
 source 'https://rails-assets.org' do
-	# Bootstrap
+	# Bootstrap - UI framework
   gem 'rails-assets-bootstrap'
+
+  # Vegas - full-screen background images
+  gem 'rails-assets-vegas'
 end
 
 
