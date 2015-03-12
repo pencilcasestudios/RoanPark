@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :housing_projects
+
   resources :plots
 
   # The priority is based upon order of creation: first created -> highest priority.
