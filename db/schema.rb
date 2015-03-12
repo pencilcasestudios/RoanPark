@@ -14,6 +14,8 @@
 ActiveRecord::Schema.define(version: 20150312073219) do
 
   create_table "plots", force: :cascade do |t|
+    t.integer  "housing_project_id"
+    t.integer  "user_id"
     t.boolean  "is_available"
     t.decimal  "area"
     t.decimal  "cash_price"
