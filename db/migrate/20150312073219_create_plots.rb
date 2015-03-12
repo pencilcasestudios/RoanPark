@@ -1,6 +1,9 @@
 class CreatePlots < ActiveRecord::Migration
   def change
     create_table :plots do |t|
+      t.references :housing_project
+      t.references :user
+
       t.boolean :is_available
       t.decimal :area
       t.decimal :cash_price
