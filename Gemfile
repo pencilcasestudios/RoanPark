@@ -44,6 +44,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.10'
 
+# Image optimisation tool
+gem 'image_optim', '~> 0.20.2', require: false
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
