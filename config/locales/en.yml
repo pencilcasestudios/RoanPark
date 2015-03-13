@@ -46,9 +46,11 @@ en:
   # Views
   views:
     pages:
+      contact:
+        title: Contact Us
       home:
         copy:
           welcome_html: |
-            <p">Roan Park is an innovative land-purchase scheme of 2 hectare plots designed to enable you to own and occupy your own land without the need for immediate payment, additional collateral or expensive borrowing. It is situated in the Ngwerere area of Lusaka opposite Kalimba Reptile Farms.</p>
+            <p">Roan Park is an innovative land-purchase scheme of 2 hectare plots. The project was designed to enable you to own and occupy your own land without the need for immediate payment, additional collateral or expensive borrowing. It is situated in the Ngwerere area of Lusaka, Zambia, opposite Kalimba Reptile Farms.</p>
             <p">Roan Park is your opportunity to build an inheritance and create a legacy.</p>
 
