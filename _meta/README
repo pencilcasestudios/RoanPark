@@ -805,6 +805,18 @@ convert  -alpha off FILE.pdf FILE.png
 mogrify -resize 412x412 -gravity center -extent 310x438 -format jpg *.pdf
 
 
+# ImageOptim
+#-----------
+# With Node
+# Ref: http://www.smashingmagazine.com/2013/12/17/imageoptim-cli-batch-compression-tool/
+npm install -g imageoptim-cli
+imageoptim --image-alpha --jpeg-mini --quit --directory ~/Sites/MyProject
+
+# With Rubygems
+# Ref: https://github.com/toy/image_optim
+# Ref: https://github.com/toy/image_optim#usage
+
+
 # MariaDB
 #--------
 # Database export:
