@@ -47,11 +47,10 @@ gem 'bcrypt', '~> 3.1.10'
 # Image optimisation tool
 gem 'image_optim', '~> 0.20.2', require: false
 
-# Use Unicorn as the app server
-# gem 'unicorn'
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+
+
+
 
 
 
@@ -96,6 +95,16 @@ group :development, :test do
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+
+
+  # Use Capistrano for deployment
+  gem 'capistrano-rails', '~> 1.1.2'
+
+  # For the `deploy:restart` hook for passenger applications
+  gem 'capistrano-passenger', '~> 0.0.2'
+
+  # Use RVM with Capistrano (Capistrano version 3 or higher)
+  gem 'rvm1-capistrano3', '~> 1.3.2.2', require: false
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   #gem 'spring'
