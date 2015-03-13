@@ -15,3 +15,10 @@
 /log/*
 !/log/.keep
 /tmp
+
+
+
+
+# Assests to serve from a "CDN"
+app/assets/images
+app/assets/pdfs
