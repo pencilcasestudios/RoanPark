@@ -38,3 +38,17 @@ en:
     meta_tags:
       description: "Roan Park"
       keywords: "roan, park, galaunia, farms, limited, real, estate, project, housing, lusaka, zambia"
+
+  # Controllers
+
+  # Models
+
+  # Views
+  views:
+    pages:
+      home:
+        copy:
+          welcome_html: |
+            <p">Roan Park is an innovative land-purchase scheme of 2 hectare plots designed to enable you to own and occupy your own land without the need for immediate payment, additional collateral or expensive borrowing. It is situated in the Ngwerere area of Lusaka opposite Kalimba Reptile Farms.</p>
+            <p">Roan Park is your opportunity to build an inheritance and create a legacy.</p>
+
