@@ -1,1 +1,18 @@
 <%= t("views.pages.home.copy.welcome_html") %>
+
+
+
+<script type="text/javascript">
+	$('#pages, body').vegas({
+		delay: 10000,
+		shuffle: true,
+		timer: false,
+		transitionDuration: 3000,
+		slides: [
+			{ src: '/assets/slides/1.jpg' },
+			{ src: '/assets/slides/2.jpg' },
+			{ src: '/assets/slides/3.jpg' },
+			{ src: '/assets/slides/4.jpg' },
+		]
+	});
+</script>
