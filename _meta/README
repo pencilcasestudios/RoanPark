@@ -10,8 +10,8 @@ cp config/examples/deploy/*.rb config/deploy # Setup deployment stage configurat
 
 # Set up symbolic link to externlised assets
 cd ~/Code/RoanPark/app/assets
-ln -nfs ~/Dropbox/Roan\ Park/Repositories/Images/ images
-ln -nfs ~/Dropbox/Roan\ Park/Repositories/PDFs/ pdfs
+ln -nfs ~/Dropbox/Roan\ Park/Externalised\ Assets/Roan\ Park\ Website/Images/ images
+ln -nfs ~/Dropbox/Roan\ Park/Externalised\ Assets/Roan\ Park\ Website/PDFs/ pdfs
 
 # Set up the hosts (/etc/hosts)
 127.0.0.1	roanpark.dev		www.roanpark.dev
