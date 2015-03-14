@@ -29,6 +29,9 @@ require 'capistrano/deploy'
 # Ref: https://github.com/rvm/rvm1-capistrano3#usage
 require 'rvm1/capistrano3'
 
+# https://github.com/capistrano/passenger/#usage
+require 'capistrano/passenger'
+
 
 
 
