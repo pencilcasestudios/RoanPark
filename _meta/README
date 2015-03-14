@@ -329,6 +329,9 @@ cd ~/Projects/Configurations/RoanPark/virtual
 cp *.yml /var/Apps/RoanPark/virtual/shared/config/
 cp .env /var/Apps/RoanPark/virtual/shared/
 
+exit
+
+# From the development machine
 cap virtual deploy:check
 cap virtual deploy
 
