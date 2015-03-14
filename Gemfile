@@ -50,6 +50,10 @@ gem 'image_optim', '~> 0.20.2', require: false
 # App settings in a config.yml file
 gem 'settingslogic', '~> 2.0.9'
 
+# To help with RVM and Capistrano
+# Prevents: Text will be echoed in the clear. Please install the HighLine or Termios libraries to suppress echoed text.
+gem 'highline', '~> 1.7.1'
+
 
 
 
