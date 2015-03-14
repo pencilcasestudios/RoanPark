@@ -23,5 +23,14 @@ require 'capistrano/deploy'
 # require 'capistrano/rails/migrations'
 # require 'capistrano/passenger'
 
+
+
+
+# Ref: https://github.com/rvm/rvm1-capistrano3#usage
+require 'rvm1/capistrano3'
+
+
+
+
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
 Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }
