@@ -54,6 +54,9 @@ gem 'settingslogic', '~> 2.0.9'
 # Prevents: "Text will be echoed in the clear. Please install the HighLine or Termios libraries to suppress echoed text."
 gem 'highline', '~> 1.7.1'
 
+# Allow SECRET_KEY_BASE to be defined in an environment variable (.env)
+# Ref: http://daniel.fone.net.nz/blog/2013/05/20/a-better-way-to-manage-the-rails-secret-token/
+gem 'dotenv-rails', '~> 2.0.0'
 
 
 
