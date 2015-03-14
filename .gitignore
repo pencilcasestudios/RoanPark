@@ -12,13 +12,31 @@
 /db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
-/log/*
 !/log/.keep
+*~
+.DS_Store
+/log/*.log
 /tmp
 
 
 
 
-# Assests to serve from a "CDN"
+# Ignore config files
+#config/config.yml
+#config/database.yml
+#config/deploy.rb
+#config/deploy/*.rb
+
+
+
+
+# Ignore locally compiled assets
+#public/assets/
+
+
+
+
+# Don't version these assests
+# Serve them from an externalised source
 app/assets/images
 app/assets/pdfs

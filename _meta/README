@@ -5,8 +5,8 @@
 cd ~/Code/RoanPark
 cp config/examples/database/database.yml config # Setup the database
 cp config/examples/config/config.yml config # Setup the configuration files
-cp config/examples/deploy.rb config # Setup the capistrano deployment recipe
-cp config/examples/deploy/*.rb config/deploy # Setup deployment stage configuration
+cp config/examples/capistrano/deploy.rb config # Setup the capistrano deployment recipe
+cp config/examples/capistrano/deploy/*.rb config/deploy # Setup deployment stage configuration
 
 # Set up symbolic link to externlised assets
 cd ~/Code/RoanPark/app/assets
