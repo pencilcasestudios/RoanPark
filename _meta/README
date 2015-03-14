@@ -812,6 +812,12 @@ mogrify -resize 412x412 -gravity center -extent 310x438 -format jpg *.pdf
 npm install -g imageoptim-cli
 imageoptim --image-alpha --jpeg-mini --quit --directory ~/Sites/MyProject
 
+
+# Image sizes
+#------------
+favicon.ico: 16x16
+apple-touch-icon: 57x57
+
 # With Rubygems
 # Ref: https://github.com/toy/image_optim
 # Ref: https://github.com/toy/image_optim#usage
