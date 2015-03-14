@@ -287,12 +287,17 @@ create database RoanPark_virtual_development;
 create database RoanPark_virtual_test;
 
 
-# Setup the YAML configuration files:
+# Setup the YAML and .env configuration files:
 # From the development machine
 cd ~/Code/RoanPark/_meta/examples/config
 scp config.virtual.yml deploy@rails.vm:~/config.yml
+
 cd ~/Code/RoanPark/_meta/examples/database
 scp database.virtual.yml deploy@rails.vm:~/database.yml
+
+cd ~/Code/RoanPark/_meta/examples/env
+scp .env.virtual deploy@rails.vm:~/.env
+
 cd ~/Code/RoanPark/
 ssh deploy@rails.vm
 
@@ -301,6 +306,7 @@ cd
 mkdir -p ~/Projects/Configurations/RoanPark/virtual
 mv database.yml ~/Projects/Configurations/RoanPark/virtual/
 mv config.yml ~/Projects/Configurations/RoanPark/virtual/
+mv .env ~/Projects/Configurations/RoanPark/virtual/
 exit
 
 # From the development machine
@@ -319,7 +325,9 @@ cap virtual deploy:check # Update configuration files and create the database af
 # After running cap virtual deploy:check
 ssh deploy@rails.vm
 cd ~/Projects/Configurations/RoanPark/virtual
+
 cp *.yml /var/Apps/RoanPark/virtual/shared/config/
+cp .env /var/Apps/RoanPark/virtual/shared/
 
 cap virtual deploy:check
 cap virtual deploy

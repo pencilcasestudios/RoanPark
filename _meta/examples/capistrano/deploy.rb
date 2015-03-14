@@ -34,6 +34,7 @@ set :linked_dirs, %w{
 }
 
 set :linked_files, %w{
+  .env
   config/config.yml
   config/database.yml
 }
