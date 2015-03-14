@@ -1,0 +1,29 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: RoanPark_production_development
+  pool: 5
+  username: roanpark
+  password: ProductionRoanParkPassword
+  host: localhost
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: RoanPark_production_test
+  pool: 5
+  username: roanpark
+  password: ProductionRoanParkPassword
+  host: localhost
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: RoanPark_production
+  pool: 5
+  username: roanpark
+  password: ProductionRoanParkPassword
+  host: localhost
