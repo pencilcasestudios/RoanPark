@@ -47,6 +47,10 @@ gem 'bcrypt', '~> 3.1.10'
 # Image optimisation tool
 gem 'image_optim', '~> 0.20.2', require: false
 
+# App settings in a config.yml file
+gem 'settingslogic', '~> 2.0.9'
+
+
 
 
 
