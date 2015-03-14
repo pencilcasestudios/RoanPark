@@ -26,6 +26,9 @@ require 'capistrano/deploy'
 
 
 
+# https://github.com/capistrano/rails/#usage
+require 'capistrano/rails'
+
 # Ref: https://github.com/rvm/rvm1-capistrano3#usage
 require 'rvm1/capistrano3'
 
