@@ -127,3 +127,15 @@ group :test do
   gem 'rspec-rails', '~> 3.2.1'
   gem 'spring-commands-rspec', '~> 1.0.4'
 end
+
+
+
+
+
+
+
+
+
+group :production do
+  gem 'mysql2', '~> 0.3.18'
+end
