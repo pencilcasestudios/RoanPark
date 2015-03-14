@@ -385,11 +385,11 @@ ssh silumesii@asher.vps
 ping asher.vps
 
 
-# Check that SSH "loops back" on the staging machine (host key verification):
+# Check that SSH "loops back" on the virtual machine (host key verification):
 # On the local development machine
 ssh deploy@asher.vps
 
-# On the staging machine
+# On the virtual machine
 ssh deploy@asher.vps
 
 # Or
@@ -415,8 +415,8 @@ exit
 # Push to the Git repository:
 # From the development machine:
 cd ~/Code/RoanPark
-git remote add staging deploy@asher.vps:/var/Repositories/Git/RoanPark.git
-git push staging master # or git push staging
+git remote add virtual deploy@asher.vps:/var/Repositories/Git/RoanPark.git
+git push virtual master # or git push virtual
 
 
 # Set up the Apps folder
@@ -437,7 +437,7 @@ cd ~/Code/RoanPark/_meta/examples/nginx
 scp nginx.roanpark.clientcase.net.conf silumesii@asher.vps:~/roanpark.clientcase.net.conf
 
 
-# On the staging machine
+# On the virtual machine
 # Set up the nginx configuration
 ssh silumesii@asher.vps
 sudo mv ~/roanpark.clientcase.net.conf /etc/nginx/sites-available
@@ -451,7 +451,7 @@ sudo mkdir -p RoanPark
 cd RoanPark
 sudo openssl genrsa -des3 -out roanpark.clientcase.net.key 1024
 
-# pass phrase: roanpark
+# pass phrase: virtual
 
 sudo openssl req -new -key roanpark.clientcase.net.key -out roanpark.clientcase.net.csr
 
@@ -481,71 +481,68 @@ sudo service nginx reload
 ssh silumesii@asher.vps
 mysql -u root -p
 create user 'roanpark'@'localhost' identified by 'StagingRoanParkPassword';
-grant all on RoanPark_staging.* to 'roanpark'@'localhost';
-grant all on RoanPark_staging_development.* to 'roanpark'@'localhost';
-grant all on RoanPark_staging_test.* to 'roanpark'@'localhost';
+grant all on RoanPark_virtual.* to 'roanpark'@'localhost';
+grant all on RoanPark_virtual_development.* to 'roanpark'@'localhost';
+grant all on RoanPark_virtual_test.* to 'roanpark'@'localhost';
 
 # Setup the MariaDB database:
 mysql -u roanpark -p
-create database RoanPark_staging;
-create database RoanPark_staging_development;
-create database RoanPark_staging_test;
+create database RoanPark_virtual;
+create database RoanPark_virtual_development;
+create database RoanPark_virtual_test;
 
 
-# Setup the Monit scripts:
-# From the development machine
-cd ~/Code/RoanPark/_meta/examples/monit
-scp delayed_job.roanpark.clientcase.net.monitrc silumesii@asher.vps:~
-cd ~/Code/RoanPark
-
-# From the staging machine
-ssh silumesii@asher.vps
-sudo mv ~/delayed_job.roanpark.clientcase.net.monitrc /etc/monit/conf.d/
-sudo service monit syntax
-
-
-# Setup the YAML configuration files:
+# Setup the YAML and .env configuration files:
 # From the development machine
 cd ~/Code/RoanPark/_meta/examples/config
-scp config.staging.yml deploy@asher.vps:~/config.yml
+scp config.clientcase.net.yml deploy@asher.vps:~/config.yml
+
 cd ~/Code/RoanPark/_meta/examples/database
-scp database.staging.yml deploy@asher.vps:~/database.yml
+scp database.clientcase.net.yml deploy@asher.vps:~/database.yml
+
+cd ~/Code/RoanPark/_meta/examples/env
+scp .env.clientcase.net deploy@asher.vps:~/.env
+
 cd ~/Code/RoanPark/
 ssh deploy@asher.vps
 
-# From the staging machine (as the deploy user)
+# From the virtual machine (as the deploy user)
 cd
-mkdir -p ~/Projects/Configurations/RoanPark/staging
-mv database.yml ~/Projects/Configurations/RoanPark/staging/
-mv config.yml ~/Projects/Configurations/RoanPark/staging/
-# After this, update:
-# 1. the production database password
-# 2. the production email password
+mkdir -p ~/Projects/Configurations/RoanPark/virtual
+mv database.yml ~/Projects/Configurations/RoanPark/virtual/
+mv config.yml ~/Projects/Configurations/RoanPark/virtual/
+mv .env ~/Projects/Configurations/RoanPark/virtual/
+exit
 
 # From the development machine
 # Capistrano steps for initial deployment
-# STAGING MACHINE DEPLOYMENT
+# VIRTUAL MACHINE DEPLOYMENT
 cd ~/Code/RoanPark/
 git checkout master
 git merge dev
 git push
-git push staging # May need to 'git push staging master'
-cap staging git:check
-cap staging deploy:setup_asset_vault
-cap staging deploy:check # Update configuration files and create the database after this
+git push virtual # May need to 'git push virtual master'
+cap virtual git:check
+cap virtual deploy:setup_asset_vault
+cap virtual deploy:check # Update configuration files and create the database after this
 
-# From the staging machine (as the deploy user)
-# After running cap staging deploy:check
-ssh deploy@rails.vm
-cd ~/Projects/Configurations/RoanPark/staging
-cp *.yml /var/Apps/RoanPark/staging/shared/config/
+# From the virtual machine (as the deploy user)
+# After running cap virtual deploy:check
+ssh deploy@asher.vps
+cd ~/Projects/Configurations/RoanPark/virtual
 
-cap staging deploy:check
-cap staging deploy
+cp *.yml /var/Apps/RoanPark/virtual/shared/config/
+cp .env /var/Apps/RoanPark/virtual/shared/
+
+exit
+
+# From the development machine
+cap virtual deploy:check
+cap virtual deploy
 
 
 # After deploying the app
-# From the staging machine
+# From the virtual machine
 sudo service monit reload
 
 
