@@ -246,15 +246,15 @@ sudo mkdir -p RoanPark
 cd RoanPark
 sudo openssl genrsa -des3 -out roanpark.virtual.key 1024
 
-# pass phrase: roanpark
+# pass phrase: virtual
 
 sudo openssl req -new -key roanpark.virtual.key -out roanpark.virtual.csr
 
 # Country Name: ZM
 # Province: Lusaka Province
 # Locality Name: Lusaka
-# Organisation Name: RoanPark Farms Limited
-# Orgnisational Unit Name: <Blank>
+# Organisation Name: Galaunia Farms Limited
+# Orgnisational Unit Name: Roan Park
 # Common Name: roanpark.virtual.
 # Email: itsupport@pencilcasestudios.com
 # Challenge password: <Blank>
@@ -465,8 +465,8 @@ sudo openssl req -new -key roanpark.clientcase.net.key -out roanpark.clientcase.
 # Country Name: ZM
 # Province: Lusaka Province
 # Locality Name: Lusaka
-# Organisation Name: RoanPark Farms Limited
-# Orgnisational Unit Name: <Blank>
+# Organisation Name: Galaunia Farms Limited
+# Orgnisational Unit Name: Roan Park
 # Common Name: roanpark.clientcase.net.
 # Email: itsupport@pencilcasestudios.com
 # Challenge password: <Blank>
@@ -677,8 +677,8 @@ sudo openssl req -new -key roanpark.co.zm.key -out roanpark.co.zm.csr
 # Country Name: ZM
 # Province: Lusaka Province
 # Locality Name: Lusaka
-# Organisation Name: RoanPark Farms Limited
-# Orgnisational Unit Name: <Blank>
+# Organisation Name: Galaunia Farms Limited
+# Orgnisational Unit Name: Roan Park
 # Common Name: roanpark.co.zm.
 # Email: itsupport@pencilcasestudios.com
 # Challenge password: <Blank>
