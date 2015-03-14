@@ -3,10 +3,9 @@
 # Setting up the development environment after a fresh repository clone
 #----------------------------------------------------------------------
 cd ~/Code/RoanPark
-cp config/examples/database/database.yml config # Setup the database
-cp config/examples/config/config.yml config # Setup the configuration files
-cp config/examples/capistrano/deploy.rb config # Setup the capistrano deployment recipe
-cp config/examples/capistrano/deploy/*.rb config/deploy # Setup deployment stage configuration
+cp _meta/examples/database/database.yml config # Setup the database
+cp _meta/examples/config/config.yml config # Setup the configuration files
+cp -r _meta/examples/capistrano/deploy* config # Setup the capistrano deployment recipe
 
 # Set up symbolic link to externlised assets
 cd ~/Code/RoanPark/app/assets
