@@ -228,7 +228,7 @@ sudo chown deploy:deploy /var/AssetsVault
 
 # Configure nginx
 # On the development machine
-cd ~/Code/RoanPark/config/examples/nginx
+cd ~/Code/RoanPark/_meta/examples/nginx
 scp nginx.roanpark.virtual.conf vladimir@rails.vm:~/roanpark.virtual.conf
 
 
@@ -289,7 +289,7 @@ create database RoanPark_virtual_test;
 
 # Setup the Monit scripts:
 # From the development machine
-cd ~/Code/RoanPark/config/examples/monit
+cd ~/Code/RoanPark/_meta/examples/monit
 scp delayed_job.roanpark.virtual.monitrc vladimir@rails.vm:~
 cd ~/Code/RoanPark
 
@@ -301,9 +301,9 @@ sudo service monit syntax
 
 # Setup the YAML configuration files:
 # From the development machine
-cd ~/Code/RoanPark/config/examples/config
+cd ~/Code/RoanPark/_meta/examples/config
 scp config.virtual.yml deploy@rails.vm:~/config.yml
-cd ~/Code/RoanPark/config/examples/database
+cd ~/Code/RoanPark/_meta/examples/database
 scp database.virtual.yml deploy@rails.vm:~/database.yml
 cd ~/Code/RoanPark/
 
@@ -440,7 +440,7 @@ sudo chown deploy:deploy /var/AssetsVault
 
 # Configure nginx
 # On the development machine
-cd ~/Code/RoanPark/config/examples/nginx
+cd ~/Code/RoanPark/_meta/examples/nginx
 scp nginx.roanpark.clientcase.net.conf silumesii@asher.vps:~/roanpark.clientcase.net.conf
 
 
@@ -501,7 +501,7 @@ create database RoanPark_staging_test;
 
 # Setup the Monit scripts:
 # From the development machine
-cd ~/Code/RoanPark/config/examples/monit
+cd ~/Code/RoanPark/_meta/examples/monit
 scp delayed_job.roanpark.clientcase.net.monitrc silumesii@asher.vps:~
 cd ~/Code/RoanPark
 
@@ -513,9 +513,9 @@ sudo service monit syntax
 
 # Setup the YAML configuration files:
 # From the development machine
-cd ~/Code/RoanPark/config/examples/config
+cd ~/Code/RoanPark/_meta/examples/config
 scp config.staging.yml deploy@asher.vps:~/config.yml
-cd ~/Code/RoanPark/config/examples/database
+cd ~/Code/RoanPark/_meta/examples/database
 scp database.staging.yml deploy@asher.vps:~/database.yml
 cd ~/Code/RoanPark/
 
@@ -652,7 +652,7 @@ sudo chown deploy:deploy /var/AssetsVault
 
 # Configure nginx
 # On the development machine
-cd ~/Code/RoanPark/config/examples/nginx
+cd ~/Code/RoanPark/_meta/examples/nginx
 scp nginx.roanpark.co.zm.conf silumesii@gad.vps:~/roanpark.co.zm.conf
 
 
@@ -713,7 +713,7 @@ create database RoanPark_production_test;
 
 # Setup the Monit scripts:
 # From the development machine
-cd ~/Code/RoanPark/config/examples/monit
+cd ~/Code/RoanPark/_meta/examples/monit
 scp delayed_job.roanpark.co.zm.monitrc silumesii@gad.vps:~
 cd ~/Code/RoanPark
 
@@ -725,9 +725,9 @@ sudo service monit syntax
 
 # Setup the YAML configuration files:
 # From the development machine
-cd ~/Code/RoanPark/config/examples/config
+cd ~/Code/RoanPark/_meta/examples/config
 scp config.production.yml deploy@gad.vps:~/config.yml
-cd ~/Code/RoanPark/config/examples/database
+cd ~/Code/RoanPark/_meta/examples/database
 scp database.production.yml deploy@gad.vps:~/database.yml
 cd ~/Code/RoanPark/
 
