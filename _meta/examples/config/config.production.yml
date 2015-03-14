@@ -11,7 +11,7 @@ defaults: &defaults
   applications_folder: "/var/Apps"
   gemset_name: roan-park-rails.4.2.x
   ruby_version: ruby-2.2.0
-  user: deploy
+  deploy_user: deploy
 
   miniumum_version_of_bundler: ">=1.8.2"
   miniumum_version_of_rake: ">=10.4.2"
