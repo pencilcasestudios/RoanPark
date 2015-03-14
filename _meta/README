@@ -56,7 +56,7 @@ bundle exec guard
 # Running the Application in development
 #=======================================
 cd ~/Code/RoanPark
-rails server --port=3000 --binding=roanpark.dev # In one terminal window - to run the application
+rails server --port=3100 --binding=roanpark.dev # In one terminal window - to run the application
 
 cd ~/Code/RoanPark
 rake jobs:work # In another terminal window - to run delayed job
