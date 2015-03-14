@@ -287,64 +287,46 @@ create database RoanPark_virtual_development;
 create database RoanPark_virtual_test;
 
 
-# Setup the Monit scripts:
-# From the development machine
-cd ~/Code/RoanPark/_meta/examples/monit
-scp delayed_job.roanpark.virtual.monitrc vladimir@rails.vm:~
-cd ~/Code/RoanPark
-
-# From the virtual machine
-ssh vladimir@rails.vm
-sudo mv ~/delayed_job.roanpark.virtual.monitrc /etc/monit/conf.d/
-sudo service monit syntax
-
-
 # Setup the YAML configuration files:
 # From the development machine
-cd ~/Code/RoanPark/_meta/examples/config
+cd ~/Code/iEmerge/_meta/examples/config
 scp config.virtual.yml deploy@rails.vm:~/config.yml
-cd ~/Code/RoanPark/_meta/examples/database
+cd ~/Code/iEmerge/_meta/examples/database
 scp database.virtual.yml deploy@rails.vm:~/database.yml
-cd ~/Code/RoanPark/
+cd ~/Code/iEmerge/
+ssh deploy@rails.vm
 
 # From the virtual machine (as the deploy user)
-ssh deploy@rails.vm
 cd
-mkdir -p ~/Projects/Configurations/RoanPark/virtual
-mv database.yml ~/Projects/Configurations/RoanPark/virtual/
-mv config.yml ~/Projects/Configurations/RoanPark/virtual/
+mkdir -p ~/Projects/Configurations/iEmerge/virtual
+mv database.yml ~/Projects/Configurations/iEmerge/virtual/
+mv config.yml ~/Projects/Configurations/iEmerge/virtual/
 exit
 
 # From the development machine
 # Capistrano steps for initial deployment
 # VIRTUAL MACHINE DEPLOYMENT
-cd ~/Code/RoanPark
+cd ~/Code/iEmerge/
 git checkout master
 git merge dev
 git push
 git push virtual # May need to 'git push virtual master'
-cap virtual deploy:setup # Update configuration files and create the database after this
+cap virtual git:check
+cap virtual deploy:setup_asset_vault
+cap virtual deploy:check # Update configuration files and create the database after this
 
 # From the virtual machine (as the deploy user)
-# After running cap virtual deploy:setup
+# After running cap virtual deploy:check
 ssh deploy@rails.vm
-cd ~/Projects/Configurations/RoanPark/virtual
-cp *.yml /var/Apps/RoanPark/virtual/shared/config/
-exit
+cd ~/Projects/Configurations/iEmerge/virtual
+cp *.yml /var/Apps/iEmerge/virtual/shared/config/
 
-# Deploy the applications
-cd ~/Code/RoanPark
 cap virtual deploy:check
-cap virtual deploy:update
-# Create databases
-cap virtual deploy:migrate
-cap virtual db:seed
-cap virtual deploy:start
+cap virtual deploy
 
 
 # After deploying the app
 # From the virtual machine
-ssh vladimir@rails.vm
 sudo service monit reload
 
 
@@ -513,50 +495,46 @@ sudo service monit syntax
 
 # Setup the YAML configuration files:
 # From the development machine
-cd ~/Code/RoanPark/_meta/examples/config
+cd ~/Code/iEmerge/_meta/examples/config
 scp config.staging.yml deploy@asher.vps:~/config.yml
-cd ~/Code/RoanPark/_meta/examples/database
+cd ~/Code/iEmerge/_meta/examples/database
 scp database.staging.yml deploy@asher.vps:~/database.yml
-cd ~/Code/RoanPark/
+cd ~/Code/iEmerge/
+ssh deploy@asher.vps
 
 # From the staging machine (as the deploy user)
-ssh deploy@asher.vps
 cd
-mkdir -p ~/Projects/Configurations/RoanPark/staging
-mv database.yml ~/Projects/Configurations/RoanPark/staging/
-mv config.yml ~/Projects/Configurations/RoanPark/staging/
-exit
+mkdir -p ~/Projects/Configurations/iEmerge/staging
+mv database.yml ~/Projects/Configurations/iEmerge/staging/
+mv config.yml ~/Projects/Configurations/iEmerge/staging/
+# After this, update:
+# 1. the production database password
+# 2. the production email password
 
 # From the development machine
 # Capistrano steps for initial deployment
-# VIRTUAL MACHINE DEPLOYMENT
-cd ~/Code/RoanPark
+# STAGING MACHINE DEPLOYMENT
+cd ~/Code/iEmerge/
 git checkout master
 git merge dev
 git push
 git push staging # May need to 'git push staging master'
-cap staging deploy:setup # Update configuration files and create the database after this
+cap staging git:check
+cap staging deploy:setup_asset_vault
+cap staging deploy:check # Update configuration files and create the database after this
 
 # From the staging machine (as the deploy user)
-# After running cap staging deploy:setup
-ssh deploy@asher.vps
-cd ~/Projects/Configurations/RoanPark/staging
-cp *.yml /var/Apps/RoanPark/staging/shared/config/
-exit
+# After running cap staging deploy:check
+ssh deploy@rails.vm
+cd ~/Projects/Configurations/iEmerge/staging
+cp *.yml /var/Apps/iEmerge/staging/shared/config/
 
-# Deploy the applications
-cd ~/Code/RoanPark
 cap staging deploy:check
-cap staging deploy:update
-# Create databases
-cap staging deploy:migrate
-cap staging db:seed
-cap staging deploy:start
+cap staging deploy
 
 
 # After deploying the app
 # From the staging machine
-ssh silumesii@asher.vps
 sudo service monit reload
 
 
@@ -725,50 +703,46 @@ sudo service monit syntax
 
 # Setup the YAML configuration files:
 # From the development machine
-cd ~/Code/RoanPark/_meta/examples/config
+cd ~/Code/iEmerge/_meta/examples/config
 scp config.production.yml deploy@gad.vps:~/config.yml
-cd ~/Code/RoanPark/_meta/examples/database
+cd ~/Code/iEmerge/_meta/examples/database
 scp database.production.yml deploy@gad.vps:~/database.yml
-cd ~/Code/RoanPark/
+cd ~/Code/iEmerge/
 
 # From the production machine (as the deploy user)
 ssh deploy@gad.vps
 cd
-mkdir -p ~/Projects/Configurations/RoanPark/production
-mv database.yml ~/Projects/Configurations/RoanPark/production/
-mv config.yml ~/Projects/Configurations/RoanPark/production/
-exit
+mkdir -p ~/Projects/Configurations/iEmerge/production
+mv database.yml ~/Projects/Configurations/iEmerge/production/
+mv config.yml ~/Projects/Configurations/iEmerge/production/
+# After this, update:
+# 1. the production database password
+# 2. the production email password
 
 # From the development machine
 # Capistrano steps for initial deployment
-# VIRTUAL MACHINE DEPLOYMENT
-cd ~/Code/RoanPark
+# PRODUCTION MACHINE DEPLOYMENT
+cd ~/Code/iEmerge/
 git checkout master
 git merge dev
 git push
 git push production # May need to 'git push production master'
-cap production deploy:setup # Update configuration files and create the database after this
+cap production git:check
+cap production deploy:setup_asset_vault
+cap production deploy:check # Update configuration files and create the database after this
 
 # From the production machine (as the deploy user)
-# After running cap production deploy:setup
+# After running cap production deploy:check
 ssh deploy@gad.vps
-cd ~/Projects/Configurations/RoanPark/production
-cp *.yml /var/Apps/RoanPark/production/shared/config/
-exit
+cd ~/Projects/Configurations/iEmerge/production
+cp *.yml /var/Apps/iEmerge/production/shared/config/
 
-# Deploy the applications
-cd ~/Code/RoanPark
 cap production deploy:check
-cap production deploy:update
-# Create databases
-cap production deploy:migrate
-cap production db:seed
-cap production deploy:start
+cap production deploy
 
 
 # After deploying the app
 # From the production machine
-ssh silumesii@gad.vps
 sudo service monit reload
 
 
