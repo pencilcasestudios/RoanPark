@@ -700,13 +700,13 @@ create database RoanPark_production_test;
 # Setup the YAML and .env configuration files:
 # From the development machine
 cd ~/Code/RoanPark/_meta/examples/config
-scp config.co.zm.yml deploy@gad.vps:~/config.yml
+scp config.roanpark.co.zm.yml deploy@gad.vps:~/config.yml
 
 cd ~/Code/RoanPark/_meta/examples/database
-scp database.co.zm.yml deploy@gad.vps:~/database.yml
+scp database.roanpark.co.zm.yml deploy@gad.vps:~/database.yml
 
 cd ~/Code/RoanPark/_meta/examples/env
-scp .env.co.zm deploy@gad.vps:~/.env
+scp .env.roanpark.co.zm deploy@gad.vps:~/.env
 
 cd ~/Code/RoanPark/
 ssh deploy@gad.vps
