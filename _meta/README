@@ -697,39 +697,31 @@ create database RoanPark_production_development;
 create database RoanPark_production_test;
 
 
-# Setup the Monit scripts:
-# From the development machine
-cd ~/Code/RoanPark/_meta/examples/monit
-scp delayed_job.roanpark.co.zm.monitrc silumesii@gad.vps:~
-cd ~/Code/RoanPark
-
-# From the production machine
-ssh silumesii@gad.vps
-sudo mv ~/delayed_job.roanpark.co.zm.monitrc /etc/monit/conf.d/
-sudo service monit syntax
-
-
-# Setup the YAML configuration files:
+# Setup the YAML and .env configuration files:
 # From the development machine
 cd ~/Code/RoanPark/_meta/examples/config
-scp config.production.yml deploy@gad.vps:~/config.yml
+scp config.co.zm.yml deploy@gad.vps:~/config.yml
+
 cd ~/Code/RoanPark/_meta/examples/database
-scp database.production.yml deploy@gad.vps:~/database.yml
+scp database.co.zm.yml deploy@gad.vps:~/database.yml
+
+cd ~/Code/RoanPark/_meta/examples/env
+scp .env.co.zm deploy@gad.vps:~/.env
+
 cd ~/Code/RoanPark/
+ssh deploy@gad.vps
 
 # From the production machine (as the deploy user)
-ssh deploy@gad.vps
 cd
 mkdir -p ~/Projects/Configurations/RoanPark/production
 mv database.yml ~/Projects/Configurations/RoanPark/production/
 mv config.yml ~/Projects/Configurations/RoanPark/production/
-# After this, update:
-# 1. the production database password
-# 2. the production email password
+mv .env ~/Projects/Configurations/RoanPark/production/
+exit
 
 # From the development machine
 # Capistrano steps for initial deployment
-# PRODUCTION MACHINE DEPLOYMENT
+# VIRTUAL MACHINE DEPLOYMENT
 cd ~/Code/RoanPark/
 git checkout master
 git merge dev
@@ -743,8 +735,13 @@ cap production deploy:check # Update configuration files and create the database
 # After running cap production deploy:check
 ssh deploy@gad.vps
 cd ~/Projects/Configurations/RoanPark/production
-cp *.yml /var/Apps/RoanPark/production/shared/config/
 
+cp *.yml /var/Apps/RoanPark/production/shared/config/
+cp .env /var/Apps/RoanPark/production/shared/
+
+exit
+
+# From the development machine
 cap production deploy:check
 cap production deploy
 
