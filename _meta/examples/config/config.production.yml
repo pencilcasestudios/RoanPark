@@ -2,7 +2,7 @@ defaults: &defaults
   # HTTP access mode:
   # 1. closed - Authenticate with HTTP basic
   # 2. open - Don't authenticate with HTTP basic
-  http_basic_access_mode: open
+  http_basic_access_mode: closed
   http_basic_name: preview
   http_basic_password: dev  # Update this in production
   test_user_password: password
@@ -68,4 +68,4 @@ production:
   # HTTP access mode:
   # 1. closed - Authenticate with HTTP basic
   # 2. open - Don't authenticate with HTTP basic
-  http_basic_access_mode: closed
+  http_basic_access_mode: open
