@@ -64,7 +64,7 @@ cd ~/Code/RoanPark
 rails console # In another terminal window - to manage administrators
 
 # View the site in a browser by visiting
-http://roanpark.dev:3000
+http://roanpark.dev:3100
 
 
 
