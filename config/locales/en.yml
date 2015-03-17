@@ -46,6 +46,9 @@ en:
   # Views
   views:
     application:
+      _footer:
+        _copy:
+          website_by: Website by
       _navigation:
         links:
           about: About
