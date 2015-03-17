@@ -14,9 +14,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><%= link_to t("views.application._navigation.links.about"), "/about" %></li>
-        <li><%= link_to t("views.application._navigation.links.plots"), "/plots" %></li>
-        <li><%= link_to t("views.application._navigation.links.contact"), "/contact" %></li>
+        <li><%= link_to t("views.application._navigation.links.about"), page_path('about') %></li>
+        <li><%= link_to t("views.application._navigation.links.plots"), page_path('plots') %></li>
+        <li><%= link_to t("views.application._navigation.links.contact"), page_path('contact') %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->
