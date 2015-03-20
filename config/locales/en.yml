@@ -67,12 +67,12 @@ en:
         link:
           about: About
           contact: Contact
-          plots: Plots
+          residential_estate: Residential Estate
           title:
             about: Learn more about the Roan Park land-purchase scheme
             contact: Contact our office and book a site visit
             home: "Roan Park is an innovative land-purchase scheme of plots situated in the Ngwerere area of Lusaka, Zambia"
-            plots: "View plot location, availability and purchase options"
+            residential_estate: "View location, availability and purchase options"
 
 
 
@@ -81,15 +81,15 @@ en:
       about:
         copy:
           overview_html: |
-            <p>Roan Park is an innovative land-purchase scheme of 2 hectare plots. The project was named after the roan antelope indigenous to this area of Lusaka. The scheme is designed to enable you to own and occupy your own land without the need for immediate payment, additional collateral or expensive borrowing. It is situated in the Ngwerere area of Lusaka opposite Kalimba Reptile Farms.<p>
+            <p>Roan Park is an innovative residential housing scheme. The project was named after the roan antelope indigenous to this area of Lusaka. The scheme is designed to enable you to own and occupy your own land without the need for immediate payment, additional collateral or expensive borrowing. It is situated in the Ngwerere area of Lusaka opposite Kalimba Reptile Farms.<p>
             <p>The sale of Roan Park is in two project phases. Phase One is sold-out while Phase Two has a limited number of plots available.</p>
             <p>Roan Park is your opportunity to create an inheritance and leave a legacy.</p>
           tagline_html: |
             <p class="lead">Your opportunity to create an inheritance and leave a legacy awaits &hellip;</p>
         link:
-          plots: View plots
+          residential_estate: Residential estate details
           title:
-            plots: "View plot location, layout, availability and pricing details"
+            residential_estate: "View location, layout, availability and pricing details"
         title: About Us
 
       contact:
@@ -107,3 +107,14 @@ en:
           title:
             learn_more: Learn more about the Roan Park land-purchase scheme
         title: Roan Park
+
+
+
+
+    housing_projects:
+      index:
+        copy:
+          plot_availability:
+            is_false: Sold
+            is_true: Available
+        title: The Residential Estate
