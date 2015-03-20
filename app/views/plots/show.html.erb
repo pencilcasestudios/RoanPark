@@ -1,69 +1,307 @@
-<p id="notice"><%= notice %></p>
+<% title t("views.plots.show.title", project_name: @plot.housing_project.name, plot_name: @plot.street_address)  %>
 
-<p>
-  <strong>Is available:</strong>
-  <%= @plot.is_available %>
-</p>
+<div class="beginning_space"></div><!-- Space to allow content BELOW the navigation bar -->
 
-<p>
-  <strong>Area:</strong>
-  <%= @plot.area %>
-</p>
+<div class="container">
+  <section class="content">
 
-<p>
-  <strong>Cash price:</strong>
-  <%= @plot.cash_price %>
-</p>
 
-<p>
-  <strong>Installment amount:</strong>
-  <%= @plot.installment_amount %>
-</p>
 
-<p>
-  <strong>Term deposit amount:</strong>
-  <%= @plot.term_deposit_amount %>
-</p>
 
-<p>
-  <strong>Total installments:</strong>
-  <%= @plot.total_installments %>
-</p>
+    <!-- Availability -->
+    <section id="availability">
+      <h1>
+        <%= link_to @plot.housing_project.name, @plot.housing_project %><br />
+        <%= @plot.street_address %><br />
+      </h1>
 
-<p>
-  <strong>Beacon code:</strong>
-  <%= @plot.beacon_code %>
-</p>
+      <br />
 
-<p>
-  <strong>Designation:</strong>
-  <%= @plot.designation %>
-</p>
+      <p>
+        <strong><%= t("views.plots.show.copy.area") %></strong>:
+        <%= t("views.plots.show.copy.plot_area", plot_area_in_hectares: number_with_precision(@plot.area, precision: 1), plot_area_in_acres: number_with_precision(@plot.area * 2.47105, precision: 1)) %><br />
 
-<p>
-  <strong>Image map coordinates:</strong>
-  <%= @plot.image_map_coordinates %>
-</p>
+        <strong><%= t("views.plots.show.copy.available") %></strong>:
+        <%= t("views.plots.show.copy.availability.#{@plot.is_available?}") %>
+      </p>
+    </section>
+    <!-- /Availability -->
 
-<p>
-  <strong>Image map shape:</strong>
-  <%= @plot.image_map_shape %>
-</p>
+    <br />
 
-<p>
-  <strong>State:</strong>
-  <%= @plot.state %>
-</p>
 
-<p>
-  <strong>Street address:</strong>
-  <%= @plot.street_address %>
-</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @plot.description %>
-</p>
 
-<%= link_to 'Edit', edit_plot_path(@plot) %> |
-<%= link_to 'Back', plots_path %>
+    <!-- Pictures -->
+    <section id="pictures" class="section">
+      <h2><%= t("views.plots.show.headings.pictures") %></h2>
+
+      <ul class="thumbnails">
+        <!-- Plot image -->
+        <li class="span8">
+          <div class="thumbnail">
+            <% if RoanPark::Application.assets.find_asset("land_projects/#{@plot.housing_project.subdomain}/#{@plot.street_name_and_number}_plot.jpg").nil? %>
+              <%= image_tag("land_projects/generic_plot.jpg", alt: "#{@plot.street_address} plot", title: "#{@plot.street_address} plot") %>
+            <% else %>
+              <%= image_tag("land_projects/#{@plot.housing_project.subdomain}/#{@plot.street_name_and_number}_plot.jpg", alt: "#{@plot.street_address} plot", title: "#{@plot.street_address} plot") %>
+            <% end %>
+
+            <div class="caption">
+              <p><%= t("views.plots._#{@plot.housing_project.subdomain}.copy.part_of_the_plot") %></p>
+            </div>
+          </div>
+        </li>
+        <!-- /Plot image -->
+
+        <!-- Beacon image -->
+        <% if RoanPark::Application.assets.find_asset("land_projects/#{@plot.housing_project.subdomain}/#{@plot.street_name_and_number}_beacon.jpg").present? %>
+          <li class="span2">
+            <div class="thumbnail">
+              <!--
+              <%= image_tag("land_projects/image_not_available_portrait.png", alt: "#{t("views.plots._roanparkphase1.copy.image_not_available")}", title: "#{t("views.plots._roanparkphase1.copy.image_not_available")}") %>
+              -->
+              <%= image_tag("land_projects/#{@plot.housing_project.subdomain}/#{@plot.street_name_and_number}_beacon.jpg", alt: "#{@plot.street_address} beacon", title: "#{@plot.street_address} beacon") %>
+              <div class="caption">
+                <p><%= t("views.plots._roanparkphase1.copy.one_of_the_beacons") %></p>
+              </div>
+            </div>
+          </li>
+        <% end %>
+        <!--/ Beacon image -->
+
+        <!-- Electricity image -->
+        <% if RoanPark::Application.assets.find_asset("land_projects/#{@plot.housing_project.subdomain}/#{@plot.street_address.gsub(" ", "_").downcase}_electricity.jpg").present? %>
+          <li class="span2">
+            <div class="thumbnail">
+              <%= image_tag("land_projects/#{@plot.housing_project.subdomain}/#{@plot.street_address.gsub(" ", "_").downcase}_electricity.jpg", alt: t("views.plots._#{@plot.housing_project.subdomain}.copy.power_line_over_plot"), title: t("views.plots._#{@plot.housing_project.subdomain}.copy.power_line_over_plot")) %>
+              <div class="caption">
+                <p><%= t("views.plots._#{@plot.housing_project.subdomain}.copy.power_line_over_plot") %></p>
+              </div>
+            </div>
+          </li>
+        <% end %>
+        <!-- /Electricity image -->
+      </ul>
+    </section>
+    <!-- /Pictures -->
+
+
+
+
+    <!-- Statutory Approvals -->
+    <section id="statutory_approvals" class="section">
+      <h2><%= t("views.plots.show.headings.statutory_approvals") %></h2>
+
+      <ul class="thumbnails">
+        <li class="span2">
+          <%= render "roanparkphase1_thumbnail", document: "business_name_registration_certificate" %>
+        </li>
+        <li class="span2">
+          <%= render "roanparkphase1_thumbnail", document: "lusaka_province_planning_authority_subdivision_approval" %>
+        </li>
+        <li class="span2">
+          <%= render "roanparkphase1_thumbnail", document: "lusaka_province_planning_authority_numbering" %>
+        </li>
+        <li class="span2">
+          <%= render "roanparkphase1_thumbnail", document: "ministry_of_lands_marking_off_from_main_title" %>
+        </li>
+        <% if RoanPark::Application.assets.find_asset("land_projects/#{@plot.housing_project.subdomain}/#{@plot.street_name_and_number}_title_deed_cover.png").present? &&
+              RoanPark::Application.assets.find_asset("land_projects/#{@plot.housing_project.subdomain}/#{@plot.street_name_and_number}_title_deed.pdf").present?
+        %>
+          <li class="span2">
+            <%= render "title_deed" %>
+          </li>
+        <% end %>
+        <% if RoanPark::Application.assets.find_asset("land_projects/#{@plot.housing_project.subdomain}/#{@plot.street_name_and_number}_plot_diagram_cover.png").present? &&
+              RoanPark::Application.assets.find_asset("land_projects/#{@plot.housing_project.subdomain}/#{@plot.street_name_and_number}_plot_diagram.pdf").present?
+        %>
+          <li class="span2">
+            <%= render "plot_diagram" %>
+          </li>
+        <% end %>
+      </ul><!-- /.thumbnails -->
+    </section>
+    <!-- /Statutory Approvals -->
+
+
+
+
+    <div class="row">
+      <!-- General plan -->
+      <div class="span4">
+        <section id="general_plan" class="section">
+          <h2><%= t("views.plots.show.headings.general_plan") %></h2>
+
+          <ul class="thumbnails">
+            <li class="span2">
+              <%= render "roanparkphase1_thumbnail", document: "general_plan" %>
+            </li>
+            <li class="span2">
+              <%= render "roanparkphase1_thumbnail", document: "topographical_plan" %>
+            </li>
+          </ul><!-- /.thumbnails -->
+        </section>
+      </div>
+      <!-- /General plan -->
+
+      <!-- Roads -->
+      <div class="span4">
+        <section id="roads" class="section">
+          <h2><%= t("views.plots.show.headings.roads") %></h2>
+
+          <ul class="thumbnails">
+            <li class="span2">
+              <%= render "roanparkphase1_thumbnail", document: "rda_external_road_expression_of_interest" %>
+            </li>
+            <li class="span2">
+              <%= render "roanparkphase1_thumbnail", document: "rda_external_road_invitation_for_bids" %>
+            </li>
+          </ul><!-- /.thumbnails -->
+        </section>
+      </div>
+      <!-- /Roads -->
+
+      <!-- Power -->
+      <div class="span4">
+        <section id="power" class="section">
+          <h2><%= t("views.plots.show.headings.power") %></h2>
+
+          <ul class="thumbnails">
+            <li class="span2">
+              <%= render "roanparkphase1_thumbnail", document: "zesco_power_grid_design_approval" %>
+            </li>
+            <li class="span2">
+              <%= render "roanparkphase1_thumbnail", document: "zesco_power_grid_commissioning" %>
+            </li>
+          </ul><!-- /.thumbnails -->
+        </section>
+      </div>
+      <!-- /Power -->
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="row">
+
+      <%= render "tree_description" %>
+
+      <!-- Brochure -->
+      <div class="span6">
+        <section id="advertising" class="section">
+          <h2><%= t("views.plots.show.headings.brochure") %></h2>
+
+          <div class="row">
+            <div class="span6">
+              <ul class="thumbnails">
+                <li class="span2">
+                  <%= render "roanparkphase1_thumbnail", document: "brochure_advertisement" %>
+                </li>
+                <li class="span2">
+                  <%= render "roanparkphase1_thumbnail", document: "brochure_location" %>
+                </li>
+                <li class="span2">
+                  <%= render "roanparkphase1_thumbnail", document: "brochure_plots" %>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="span6">
+              <ul class="thumbnails">
+                <li class="span2">
+                  <%= render "roanparkphase1_thumbnail", document: "brochure_team" %>
+                </li>
+                <li class="span2">
+                  <%= render "roanparkphase1_thumbnail", document: "brochure_contacts" %>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- /Brochure -->
+    </div>
+
+
+
+
+
+
+
+
+
+    <section id="plot_owners_association" class="section">
+      <h2><%= t("views.plots.show.headings.plot_owners_association_html") %></h2>
+
+      <ul class="thumbnails">
+        <li class="span2">
+          <%= render "roanparkphase1_thumbnail", document: "rppoa_certificate_of_registration" %>
+        </li>
+        <li class="span2">
+          <%= render "roanparkphase1_thumbnail", document: "rppoa_constitution" %>
+        </li>
+        <li class="span2">
+          <%= render "roanparkphase1_thumbnail", document: "rppoa_by_laws" %>
+        </li>
+        <li class="span2">
+          <%= render "roanparkphase1_thumbnail", document: "rppoa_board_member_list" %>
+        </li>
+        <li class="span2">
+          <%= render "roanparkphase1_thumbnail", document: "rppoa_annual_levy" %>
+        </li>
+      </ul><!-- /.thumbnails -->
+    </section>
+
+
+
+
+
+
+
+
+    <section id="advertising" class="section">
+      <h2><%= t("views.plots.show.headings.advertising") %></h2>
+
+      <ul class="thumbnails">
+        <li class="span2">
+          <%= render "roanparkphase1_thumbnail", document: "advertisement_1" %>
+        </li>
+        <li class="span2">
+          <%= render "roanparkphase1_thumbnail", document: "advertisement_2" %>
+        </li>
+        <li class="span2">
+          <%= render "roanparkphase1_thumbnail", document: "advertisement_3" %>
+        </li>
+        <li class="span2">
+          <%= render "roanparkphase1_thumbnail", document: "advertisement_4" %>
+        </li>
+        <li class="span2">
+          <%= render "roanparkphase1_thumbnail", document: "advertisement_5" %>
+        </li>
+        <li class="span2">
+          <%= render "roanparkphase1_thumbnail", document: "advertisement_7" %>
+        </li>
+        <li class="span2">
+          <%= render "roanparkphase1_thumbnail", document: "advertisement_6" %>
+        </li>
+        <li class="span2">
+          <%= render "roanparkphase1_thumbnail", document: "advertisement_8" %>
+        </li>
+        <li class="span2">
+          <%= render "roanparkphase1_thumbnail", document: "advertisement_9" %>
+        </li>
+      </ul><!-- /.thumbnails -->
+    </section>
+
+    <%= render "team" %>
+
+</div>
