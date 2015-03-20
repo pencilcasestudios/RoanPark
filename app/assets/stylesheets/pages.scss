@@ -1,6 +1,12 @@
+// Common settings
+@import "common";
+
+
+
+
 #pages {
 	header {
-		background-color: rgba(10,10,10,0.4);
+		background-color: $black_semi_transparent;
 		padding: 1em;
 		text-align: right;
 
