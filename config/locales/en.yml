@@ -38,10 +38,21 @@ en:
     meta_tags:
       description: "Roan Park"
       keywords: "buy, land, plot, real, estate, housing, project, roan, park, lusaka, zambia, roan, park"
+    lorem_html: |
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+
 
   # Controllers
 
+
+
+
   # Models
+
+
+
 
   # Views
   views:
@@ -62,19 +73,37 @@ en:
             contact: Contact our office and book a site visit
             home: "Roan Park is an innovative land-purchase scheme of plots situated in the Ngwerere area of Lusaka, Zambia"
             plots: "View plot location, availability and purchase options"
+
+
+
+
     pages:
       about:
+        copy:
+          overview_html: |
+            <p>Roan Park is an innovative land-purchase scheme of 2 hectare plots. The project was named after the roan antelope indigenous to this area of Lusaka. The scheme is designed to enable you to own and occupy your own land without the need for immediate payment, additional collateral or expensive borrowing. It is situated in the Ngwerere area of Lusaka opposite Kalimba Reptile Farms.<p>
+            <p>The sale of Roan Park is in two project phases. Phase One is sold-out while Phase Two has a limited number of plots available.</p>
+            <p>Roan Park is your opportunity to create an inheritance and leave a legacy.</p>
+          tagline_html: |
+            <p class="lead">Your opportunity to create an inheritance and leave a legacy awaits &hellip;</p>
+        link:
+          plots: View plots
+          title:
+            plots: "View plot location, layout, availability and pricing details"
         title: About Us
+
       contact:
         title: Contact Us
+
       home:
-        link:
-          learn_more: Learn more
-          title:
-            learn_more: Learn more about the Roan Park land-purchase scheme
         copy:
           welcome_html: |
             <p>Named after Zambia's beautiful, elegant and spry roan antelope, Roan Park is an innovative land-purchase scheme of plots situated in the Ngwerere area of Lusaka, Zambia.</p>
             <p>Roan Park is your opportunity to create an inheritance and leave a legacy.</p>
         headings:
           welcome: Roan Park
+        link:
+          learn_more: Learn more
+          title:
+            learn_more: Learn more about the Roan Park land-purchase scheme
+        title: Roan Park

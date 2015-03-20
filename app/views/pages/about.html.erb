@@ -1,7 +1,25 @@
 <div class="row">
-	<div class="col-lg-4">
+	<div class="col-lg-12">
 		<header>
 			<h1><%= title t("views.pages.about.title") %></h1>
+			<%= t("views.pages.about.copy.tagline_html") %>
 		</header>
 	</div>
-</div>
+</div><!-- /.row -->
+
+
+
+
+<div class="row">
+	<div class="col-lg-8 col-md-8">
+		<%= t("views.pages.about.copy.overview_html") %>
+
+		<br />
+
+		<p><%= link_to t("views.pages.about.link.plots"), plots_path, class: "btn btn-primary btn-lg", role: "button", title: t("views.pages.about.link.title.plots") %></p>
+	</div>
+	<div class="col-lg-4 col-md-4">
+		<p><%= image_tag "land_projects/roanparkphase1/brochure_advertisement_cover.png", class: "fit-width" %></p>
+		<p><%= image_tag "land_projects/roanparkphase2/brochure_advertisement_cover.png", class: "fit-width" %></p>
+	</div>
+</div><!-- /.row -->
