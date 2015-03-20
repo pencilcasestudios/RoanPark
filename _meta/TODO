@@ -15,3 +15,5 @@ TODO - Figure out how to access the Rails console in production (do I need to re
 TODO - Get the current Roan Park project contact details (Foxdale Court)
 TODO - Add the new Roan Park office to Google Maps
 TODO - SEO metatags for individual pages (Ref: https://github.com/kpumuk/meta-tags)
+TODO - Responsive image resize for the brochure covers on the About page
+TODO - Link the brochure covers to the PDF brochures for download
