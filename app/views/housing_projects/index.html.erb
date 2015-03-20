@@ -19,7 +19,7 @@
 
         <p><%= housing_project.summary %></p>
 
-        <%= image_tag("land_projects/#{housing_project.subdomain}/#{housing_project.plot_layout_image}",  width: "#{housing_project.image_map_width}", height: "#{housing_project.image_map_height}", usemap: "#plot_layout_map_#{ housing_project.id }") %>
+        <%= image_tag("land_projects/#{housing_project.subdomain}/#{housing_project.plot_layout_image}",  width: "#{housing_project.image_map_width}", height: "#{housing_project.image_map_height}", class: "img-responsive center-block", usemap: "#plot_layout_map_#{ housing_project.id }") %>
 
         <map name="plot_layout_map_<%= housing_project.id %>">
           <% housing_project.plots.each do |plot| %>
