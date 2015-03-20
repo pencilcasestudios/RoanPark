@@ -11,3 +11,4 @@ TODO - Administration
 TODO - Housing Projects
 TODO - Seed database
 TODO - Roman Numerals gem
+TODO - Figure out how to access the Rails console in production (do I need to regenerate binstubs?)
