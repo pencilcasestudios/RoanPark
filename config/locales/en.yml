@@ -29,7 +29,7 @@ en:
         number_1: "+260 211 257 275"
         number_2: "+260 966 744 308"
       fax: "+260 211 253 205"
-      tagline: "Your opportunity to build an inheritance and create a legacy"
+      tagline: "Your opportunity to create an inheritance and leave a legacy"
       twitter_url: "http://twitter.com/RoanPark"
     developer:
       name: "Pencil Case Studios"
@@ -37,7 +37,7 @@ en:
     name: "Roan Park"
     meta_tags:
       description: "Roan Park"
-      keywords: "roan, park, galaunia, farms, limited, real, estate, project, housing, lusaka, zambia"
+      keywords: "buy, land, plot, real, estate, housing, project, roan, park, lusaka, zambia, roan, park"
 
   # Controllers
 
@@ -64,7 +64,7 @@ en:
             plots: "View plot location, availability and purchase options"
     pages:
       about:
-        title: About Roan Park
+        title: About Us
       contact:
         title: Contact Us
       home:
