@@ -15,7 +15,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><%= link_to t("views.application._navigation.link.about"), page_path('about'), title: t("views.application._navigation.link.title.about") %></li>
-        <li><%= link_to t("views.application._navigation.link.plots"), page_path('plots'), title: t("views.application._navigation.link.title.plots") %></li>
+        <li><%= link_to t("views.application._navigation.link.plots"), plots_path, title: t("views.application._navigation.link.title.plots") %></li>
         <li><%= link_to t("views.application._navigation.link.contact"), page_path('contact'), title: t("views.application._navigation.link.title.contact") %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
