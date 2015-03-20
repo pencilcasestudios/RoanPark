@@ -30,6 +30,18 @@ describe "Image assets" do
 		expect(File.exist?("app/assets/images/slides/3.jpg")).to be true
 		expect(File.exist?("app/assets/images/slides/4.jpg")).to be true
 		expect(File.exist?("app/assets/images/slides/5.jpg")).to be true
+
+
+		# Land Projects
+		expect(File.exist?("app/assets/images/land_projects/generic_plot.jpg")).to be true
+		expect(File.exist?("app/assets/images/land_projects/image_not_available_landscape.png")).to be true
+		expect(File.exist?("app/assets/images/land_projects/image_not_available_portrait.png")).to be true
+
+		# Land Projects Team
+		expect(File.exist?("app/assets/images/land_projects/team/desi_findlay.png")).to be true
+		expect(File.exist?("app/assets/images/land_projects/team/dominic_ambulaya.png")).to be true
+		expect(File.exist?("app/assets/images/land_projects/team/johan_p_richter.png")).to be true
+		expect(File.exist?("app/assets/images/land_projects/team/kabwe_katayi.png")).to be true
 	end
 end
 
