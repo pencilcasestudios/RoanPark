@@ -15,11 +15,11 @@ footer {
 	padding-bottom: 1em;
 
 	background-color:  $black_semi_transparent;
-	color: $grey_muted;
+	color: $grey;
 
 	p {
 		a {
-			color: $grey_muted;
+			color: $grey;
 
 			&:hover {
 				background: transparent;
@@ -28,7 +28,7 @@ footer {
 			}
 
 			&:visited {
-				color: $grey_muted;
+				color: $grey;
 
 				&:hover {
 					color: $yellow;
