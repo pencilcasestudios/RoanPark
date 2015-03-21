@@ -111,6 +111,24 @@ en:
 
 
 
+    plots:
+      show:
+        copy:
+          area: Area of the plot
+          available: Available for purchase?
+          plot_area: "%{plot_area_in_hectares} hectares (%{plot_area_in_acres} acres)"
+          plot_beacon: "%{plot} beacon"
+          plot_name: "%{plot}"
+          availability:
+            "false": "No"
+            "true": "Yes"
+        headings:
+          pictures: Pictures
+        title: "%{project_name} | %{plot_name}"
+
+
+
+
     housing_projects:
       index:
         copy:
