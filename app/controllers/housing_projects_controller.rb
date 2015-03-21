@@ -4,7 +4,7 @@ class HousingProjectsController < ApplicationController
   # GET /housing_projects
   # GET /housing_projects.json
   def index
-    @housing_projects = HousingProject.all
+    @housing_projects = HousingProject.all.order(id: :desc)
   end
 
   # GET /housing_projects/1
