@@ -112,6 +112,16 @@ en:
 
 
     plots:
+      _team:
+        copy:
+          desi_findlay_html: Desi Findlay
+          desi_findlay_title_html: Legal Representative
+          dominic_ambulaya_html: Dominic Ambulaya
+          dominic_ambulaya_title_html: Surveying Consultant
+          johan_richter_html: Johan Richter
+          johan_richter_title_html: Property Director
+          kabwe_katayi_html: Kabwe Katayi
+          kabwe_katayi_title_html: Legal Representative
       _thumbnail:
         copy:
           business_name_registration_certificate_html: Business Name Registration Certificate
@@ -512,6 +522,7 @@ en:
           advertising: Advertising
           general_plan: General Plan
           power: Power
+          team: Team
           brochure: Brochure
           roads: Roads
           plot_owners_association: Plot Owners Association
