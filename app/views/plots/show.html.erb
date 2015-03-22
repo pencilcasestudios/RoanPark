@@ -119,59 +119,60 @@
 <div class="row">
 	<!-- General plan -->
 	<div class="col-lg-4">
-		<div class="row">
-			<section id="general_plan">
+		<section id="general_plan">
 
-				<h2><%= t("views.plots.show.headings.general_plan") %></h2>
+			<h2><%= t("views.plots.show.headings.general_plan") %></h2>
 
+			<div class="row">
 				<div class="col-lg-6">
 					<%= render "thumbnail", document: "general_plan" %>
 				</div>
 				<div class="col-lg-6">
 					<%= render "thumbnail", document: "topographical_plan" %>
 				</div>
-			</section>
-		</div><!-- /.row -->
+			</div><!-- /.row -->
+		</section><!-- /#general_plan -->
 	</div>
 	<!-- /General plan -->
 
 
 	<!-- Roads -->
 	<div class="col-lg-4">
-		<div class="row">
-			<section id="roads">
+		<section id="roads">
 
-				<h2><%= t("views.plots.show.headings.roads") %></h2>
+			<h2><%= t("views.plots.show.headings.roads") %></h2>
 
+			<div class="row">
 				<div class="col-lg-6">
 					<%= render "thumbnail", document: "rda_external_road_expression_of_interest" %>
 				</div>
 				<div class="col-lg-6">
 					<%= render "thumbnail", document: "rda_external_road_invitation_for_bids" %>
 				</div>
-			</section>
-		</div><!-- /.row -->
+			</div><!-- /.row -->
+		</section><!-- /#roads -->
 	</div>
 	<!-- /Roads -->
 
 
 	<!-- Power -->
 	<div class="col-lg-4">
-		<div class="row">
-			<section id="power">
+		<section id="power">
 
-				<h2><%= t("views.plots.show.headings.power") %></h2>
+			<h2><%= t("views.plots.show.headings.power") %></h2>
 
+			<div class="row">
 				<div class="col-lg-6">
-							<%= render "thumbnail", document: "zesco_power_grid_design_approval" %>
+					<%= render "thumbnail", document: "zesco_power_grid_design_approval" %>
 				</div>
 				<div class="col-lg-6">
-							<%= render "thumbnail", document: "zesco_power_grid_commissioning" %>
+					<%= render "thumbnail", document: "zesco_power_grid_commissioning" %>
 				</div>
-			</section>
-		</div><!-- /.row -->
+			</div><!-- /.row -->
+		</section><!-- /#power -->
 	</div>
 	<!-- /Power -->
+
 </div><!-- /.row -->
 
 
