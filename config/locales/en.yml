@@ -127,6 +127,356 @@ en:
       _title_deed:
         copy:
           title_deed: "%{plot} Title Deed"
+      _tree_description:
+        headings:
+          kachele: The Kachele Tree
+          kalongwe: The Kalongwe Tree
+          lubali: The Lubali Tree
+          manga: The Manga Tree
+          mbawa: The Mbawa Tree
+          mpasa: The Mpasa Tree
+          mukuswi: The Mukuswi Tree
+          mulushi: The Mulushi Tree
+          mungosya: The Mungosya Tree
+          musaka: The Musaka Tree
+          musombo: The Musombo Tree
+          nkuyu: The Nkuyu Tree
+          nzilu: The Nzilu Tree
+          pulupulu: The Pulupulu Tree
+        copy:
+          kachele_tree_html: |
+            <h3>Local and scientific names</h3>
+            <p>
+              Chi-Bemba: <em>Mutaba</em><br />
+              CHI-NYANJA: <em>KACHELE</em><br />
+              Tonga: <em>Mukuyu</em><br />
+            </p>
+            <p>
+              Family: Bombacaceae<br />
+              Scientific name: Adansonia digitata AL.<br />
+              Common name: Baobab<br />
+            </p>
+            <h3>Habitat/Ecology</h3>
+            <p>
+              Found in low altitude lying areas and dambos especially in riverine vegetation, high
+              rainfall miombo, also in Parinari excelsa forest on river-bank sand, often on Kalahari
+              Sand.
+            </p>
+            <h3>Distribution</h3>
+            <p>
+              Distributed in low altitude areas and many parts of Zambia.
+            </p>
+          kalongwe_tree_html: |
+            <h3>Local and scientific names</h3>
+            <p>
+              CHI-BEMBA: KALONGWE<br />
+              Chi-Nyanja: Kabulasese, Mkorasinga, Mvungwe, Mzembe<br />
+              Chi-Tonga: Kafundula, Mukonkoto, Mukandanjase, Mutatambeba, Ndelele<br />
+              Ki-Lunda: Kafundula, Muhongandumba, Mutatambululu<br />
+              Ki-Kaonde: Kafundula, Muyimbeyimbe<br />
+              Si-Lozi: Mukonkoto<br />
+            </p>
+            <p>
+              Family: Leguminosae subfamily Papilionoidae<br />
+              Scientific name: Dalbergia melanoxylon Guill. & Perr.<br />
+              Common name: African blackwood<br />
+            </p>
+            <h3>Habitat/Ecology</h3>
+            <p>
+              Found in Parinari, Cryptosepalum, and Miombo woodlands.
+            </p>
+            <h3>Distribution</h3>
+            <p>
+              Throughout Zambia
+            </p>
+          lubali_tree_html: |
+            <h3>Local and scientific names</h3>
+            <p>
+              CHI-BEMBA: LUBALI, Chimbili, Kambili<br />
+              Chi-Nyanja: Lingwende, Kakoma, Mcheu,<br />
+              Mkoma, Mlaza, Nyamavumo<br />
+              Chi-Tonga: Mulala, Kankunka, Mapokwe,<br />
+              Kankomona, Kalala<br />
+              Si-Lozi: Kankoma, Mulala, Mulunga, Munganda<br />
+              Ki-Kaonde: Kambili<br />
+            </p>
+            <p>
+              Family: Palmae (Arecacea)<br />
+              Scientific name: Phoenix reclinata<br />
+              Common name: Wild date palm, False date palm<br />
+            </p>
+            <h3>Distribution</h3>
+            <p>
+              Central Province<br />
+              Eastern Province<br />
+              North Western Province<br />
+              Western Province<br />
+            </p>
+          manga_tree_html: |
+            <h3>Local and scientific names</h3>
+            <p>
+              Chi-Bemba: Muputu, Kampela<br />
+              Chi-Nyanja: Mputi<br />
+              Chi-Tonga: Musewe<br />
+              Ki-Lunda: Mupuchi<br />
+              KI-KAONDE: MANGA, Mpazhi<br />
+              Si-Lozi: Muputi, Mutuya<br />
+            </p>
+            <p>
+              Family: Caesalpiniaceae<br />
+              Scientific name: Brachystegia utilis Burtt Davy & Hutch.<br />
+            </p>
+            <h3>Habitat/Ecology</h3>
+            <p>
+              Occurs on riparian, evergreen, semi-evergreen thicket, dry evergreen forest types especially in Miombo, chipya, rocky hills and escarpments and red loam soils.
+            </p>
+            <h3>Distribution</h3>
+            <p>
+              Throughout Zambia.
+            </p>
+          mbawa_tree_html: |
+            <h3>Local and scientific names</h3>
+            <p>
+              Chi-Bemba: Mululu, Mushikishichulu<br />
+              CHI-NYANJA: MBAWA<br />
+              Chi-Tonga: Mululu<br />
+              Ki-Kaonde: Mululu<br />
+            </p>
+            <p>
+              Family: Simaroubaceae (Also, Kirkiaceae)<br />
+              Scientific name: Kirkia acuminata Oliv.<br />
+              Common name: Bastard marula, White seringa, White syringa<br />
+              Synonym: Kirkia pubescens Burtt Davy<br />
+            </p>
+            <h3>Habitat/Ecology</h3>
+            <p>
+              Quite common on stream sides as a riparian species, chipya and munga vegetation types. It prefers terraces and stable, gently sloping riverbeds in riparian forests; it also grows well on adjacent colluvial slopes at the margins of floodplains. Where sufficient moisture is available, the species is not limited by topographic position. It is frost sensitive and shares the dominant canopy position with Diospyros mespiliformis, Parinari excelsa and Syzygium cordatum. It also grows in well in well-developed gallery forests with Chrysophyllum species.
+            </p>
+            <h3>Distribution</h3>
+            <p>
+              Apart from the Kalahari sands of Western and a part of North-western Provinces, it is found throughout Zambia.</p>
+            </p>
+          mpasa_tree_html: |
+            <h3>Local and scientific names</h3>
+            <p>
+              CHI-BEMBA: MPASA<br />
+              Chi-Nyanja: Kabunga, Kamponi<br />
+              Chi-Tonga: Kamponi, Mumba, Sandwe<br />
+              Si-Lozi: Katondomumba, Mwanza<br />
+            </p>
+            <p>
+              Family: Meliaceae<br />
+              Scientific name: Khaya nyasica Stapf ex Baker f.<br />
+              Common Name: Red mahogany, African mahogany<br />
+              Synonym: Khaya anthotheca. C. DC<br />
+            </p>
+            <h3>Habitat/Ecology</h3>
+            <p>
+              Though it occurs in various types of vegetation, it is prevalent in plateau Miombo woodlands.
+            </p>
+            <h3>Distribution</h3>
+            <p>
+              Found all over Zambia except for some fringes of North-western and Western Provinces.
+            </p>
+          mukuswi_tree_html: |
+            <h3>Local and scientific names</h3>
+            <p>
+              Chi-Bemba: Mwelela, Kalimba<br />
+              Chi-Nyanja: Mukongolo<br />
+              CHI-TONGA: MUKUSWI<br />
+            </p>
+            <p>
+              Family: Caesalpiniaceae<br />
+              Scientific name: Brachystegia spiciformis Benth.<br />
+              Synonyms:<br />
+              Brachystegia venosa Hutch. & Burtt Davy<br />
+              Brachystegia spiciformis Benth. var. latifoliolata (De Wild.) Hoyle<br />
+              Brachystegia lujae De Wild.<br />
+              Brachystegia taubertiana Hutch. & Burtt Davy<br />
+              Brachystegia oliveri Taub.<br />
+            </p>
+            <h3>Habitat/Ecology</h3>
+            <p>
+              Hill, plateau and scarp Miombo including Parinari forests and mainly in high rainfall areas.
+            </p>
+            <h3>Distribution</h3>
+            <p>
+              In high rainfall areas of Northern, Luapula, Copperbelt, North-western and Central Provinces. Outside, Zambia it is found in southern half of Tanzania, Malawi, southeast Democratic Republic of the Congo including the southern half of the United Republic of Tanzania.
+            </p>
+          mulushi_tree_html: |
+            <h3>Local and scientific names</h3>
+            <p>
+              CHI-BEMBA: MULUSHI<br />
+              Chi-Nyanja: Mweye
+            </p>
+            <p>
+              Family: Mimosaceae<br />
+              Scientific name: Acacia erioloba (Formerly Acacia girrafae)<br />
+              Common name: Camel thorn<br />
+            </p>
+            <h3>Habitat/Ecology</h3>
+            <p>
+              Prevalent in montane, evergreen and sometimes in swamp and riparian forests.
+            </p>
+            <h3>Distribution</h3>
+            <p>
+              Confined to higher rainfall areas and altitudes in Zambia.
+            </p>
+          mungosya_tree_html: |
+            <h3>Local and scientific names</h3>
+            <p>
+              Chi-Nyanja: Mkunku, Nyafungo<br />
+              CHI-TONGA: MUNGOSIA (MUNGOSYA)<br />
+              Si-Lozi: Muhoto<br />
+              Ki-Kaonde: Mwiba<br />
+            </p>
+            <p>
+              Family: Balanitaceae (Simaroubaceae)<br />
+              Scientific name: Balanites aegyptiaca (L.) Delile var. aegyptiaca<br />
+              Common name: Desert date, Torchwood<br />
+            </p>
+            <p>
+              Synonyms:<br />
+              Agialid aegyptiaca (L.) Adans.<br />
+              Agialida palestinaca Tiegh.<br />
+              Balanites zizyphoides Mildbr. & Schltr.<br />
+              Agialida nigra Tiegh.<br />
+              Agialid abyssinica Tiegh.<br />
+            </p>
+            <h3>Habitat/Ecology</h3>
+            <p>
+              Prevalent in dambo margins of lower rainfall areas and in particular baikiaea,
+              Kalahari, munga and savannah (of the Kalahari) vegetations.
+            </p>
+            <h3>Distribution</h3>
+            <p>
+              Mostly found in lower rainfall areas of Zambia.
+            </p>
+          musaka_tree_html: |
+            <h3>Local and scientific names</h3>
+            <p>
+              CHI-BEMBA: MUSAKA<br />
+              Chi-Nyanja: Kasumbuti, Kavwenji, Mkuti<br />
+              Ki-Lunda: Kasabushi<br />
+              Ki-Kaonde: Lwenshe<br />
+            </p>
+            <p>
+              Family: Caesalpiniaceae<br />
+              Scientific name: Cassia abbreviata<br />
+              Common Name: Long pod cassia<br />
+            </p>
+            <h3>Habitat/Ecology</h3>
+            <p>
+              Plateau Miombo, scarp, hill Miombo, Kalahari, Lake Basin Chipya.
+            </p>
+            <h3>Distribution</h3>
+            <p>
+              Found in most of Zambia. Also found in north-west Zimbabwe, United Republic of Zambia, Angola, Mozambique, south-east Democratic Republic of Congo and Malawi.
+            </p>
+          musombo_tree_html: |
+            <h3>Local and scientific names</h3>
+            <p>
+              CHI-BEMBA: MUSOMBO<br />
+              Chi-Nyanja: Mpalamaza, Mlaza, Msese, Mtanta<br />
+              Chi-Tonga: Munsangwa, Mukumbuzu, Musakalala<br />
+              Si-Lozi: Mulangu, Munzeneze<br />
+            </p>
+            <p>
+              Family: Mimosaceae<br />
+              Scientific name: Acacia nigrescens Oliv.<br />
+              Common name: Knob thorn<br />
+            </p>
+            <p>
+              Synonyms:<br />
+              Acacia nigrescens Oliv. var. pallens Benth.<br />
+              Acacia passargei Harms<br />
+              Acacia perrottii Warb.<br />
+              Acacia schliebenii Harms<br />
+              Acacia brosigii Harms<br />
+            </p>
+            <h3>Habitat/Ecology</h3>
+            <p>
+              Usually found around limestone and sometimes on termite mounds, thickets and
+              other woodland types except miombo.
+            </p>
+            <h3>Distribution</h3>
+            <p>
+              Except in some districts it is almost found throughout Zambia.
+            </p>
+          nkuyu_tree_html: |
+            <h3>Local and scientific names</h3>
+            <p>
+              Chi-Bemba: Mubambwangoma, Katikayengele<br />
+              CHI-NYANJA: NKUYU<br />
+              Chi-Tonga: Mwalabwe, Mulyanzovu<br />
+              Si-Lozi: Mwalabwe
+            </p>
+            <p>
+              Family: Mimosaceae<br />
+              Scientific name: Dicrostachys cinerea<br />
+            </p>
+            <h3>Habitat/Ecology</h3>
+            <p>
+              Found in Lake Basin chipya, mopane and sometimes in dambo margins, munga and
+              anthill vegetation types. The tree has wide ecological distribution; however, it reaches
+              its maximum development as an individual tree on low-lying, level alluvial sites with
+              deep sandy loam and uninterrupted access to water such as valley floors, riverbanks
+              or the foot of rocky slopes. It is intolerant to shade after the seedling stage and
+              therefore prefers open woodland or savannah for natural regeneration.
+            </p>
+            <h3>Distribution</h3>
+            <p>
+              Almost throughout Zambia.
+            </p>
+          nzilu_tree_html: |
+            <h3>Local and scientific names</h3>
+            <p>
+              Chi-Bemba: Mutimbwambusa, Mubundikwa<br />
+              CHI-NYANJA: NZILU<br />
+              Chi-Tonga: Mubundikwa, Mupusho, Ngombe<br />
+              Ki-Lunda: Mumbanja, Mupembe<br />
+            </p>
+            <p>
+              Family: Melliaceae<br />
+              Scientific name: Entandrophragma caudatum (Sprague) Sprague<br />
+              Common name: Wooden banana<br />
+            </p>
+            <p>
+              Synonyms:<br />
+              Entandrophragma utile sensu Gomes & Sousa<br />
+              Pseudocedrela caudata Sprague<br />
+            </p>
+            <h3>Habitat/Ecology</h3>
+            <p>
+              Baikiae, chipya, cryptosepalum and minimal in, mopane, scrub munga and swamp
+              forests.
+            </p>
+            <h3>Distribution</h3>
+            <p>
+              Throughout Zambia except for some few districts in Southern, Western and Northwestern Provinces.
+            </p>
+          pulupulu_tree_html: |
+            <h3>Local and scientific names</h3>
+            <p>
+              Chi-Bemba: Kapalupalu<br />
+              Chi-Nyanja: Mkelete, Kasalusalu, Mkumudwe, Mfankomo, Msalu, PULUPULU<br />
+              Chi-Tonga: Mukelete, Chinsale, Musonkomo<br />
+              Si-Lozi: Mukelete<br />
+              Ki-Kaonde: Kafundula<br />
+              Ki-Lunda: Kafundula<br />
+            </p>
+            <p>
+              Family: Rhamnaceae<br />
+              Scientific name: Ziziphus abyssinica A.Rich<br />
+            </p>
+            <h3>Habitat/Ecology</h3>
+            <p>
+              Prevalent in valley upper soils, munga and mopane vegetation types. It is also a rare spectacle in other vegetation types.
+            </p>
+            <h3>Distribution</h3>
+            <p>
+              The tree is largely confined to the southern of half Zambia including parts of eastern, central and Northern provinces.
+            </p>
       show:
         copy:
           area: Area of the plot
