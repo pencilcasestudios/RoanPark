@@ -26,14 +26,18 @@ require 'capistrano/deploy'
 
 
 
-# https://github.com/capistrano/rails/#usage
+# Ref: https://github.com/capistrano/rails/#usage
 require 'capistrano/rails'
 
 # Ref: https://github.com/rvm/rvm1-capistrano3#usage
 require 'rvm1/capistrano3'
 
-# https://github.com/capistrano/passenger/#usage
+# Ref: https://github.com/capistrano/passenger/#usage
 require 'capistrano/passenger'
+
+# Ref: https://github.com/dei79/capistrano-rails-collection#usage
+require 'capistrano/rails/collection'
+
 
 
 
