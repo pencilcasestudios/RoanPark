@@ -62,3 +62,11 @@ h2 {
 		}
 	}
 }
+
+#plot_owners_association {
+	img {
+		&.img-responsive {
+			border: 1px solid $grey;
+		}
+	}
+}

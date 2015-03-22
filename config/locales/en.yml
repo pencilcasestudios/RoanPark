@@ -124,6 +124,11 @@ en:
           brochure_advertisement_html: Advertisement from Brochure
           brochure_location_html: Location from Brochure
           brochure_plots_html: Plots from Brochure
+          rppoa_certificate_of_registration_html: "Roan Park Plot Owner&rsquo;s Association Certificate of Registration"
+          rppoa_constitution_html: "Roan Park Plot Owner&rsquo;s Association Constitution"
+          rppoa_by_laws_html: "Roan Park Plot Owner&rsquo;s Association By-Laws"
+          rppoa_board_member_list_html: "Roan Park Plot Owner&rsquo;s Association Board Members"
+          rppoa_annual_levy_html: "Roan Park Plot Owner&rsquo;s Association Annual Levy"
           brochure_team_html: Team from Brochure
           brochure_contacts_html: Contacts from Brochure
           zesco_power_grid_commissioning_html: ZESCO Power Grid Commissioning
@@ -499,6 +504,7 @@ en:
           power: Power
           brochure: Brochure
           roads: Roads
+          plot_owners_association: Plot Owners Association
           statutory_approvals: Statutory Approvals
         links:
           download_pdf: Download the PDF
