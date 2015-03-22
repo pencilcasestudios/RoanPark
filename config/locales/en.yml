@@ -112,6 +112,9 @@ en:
 
 
     plots:
+      _plot_diagram:
+        copy:
+          plot_diagram: "%{plot} Plot Diagram"
       _team:
         copy:
           desi_findlay_html: Desi Findlay
