@@ -1,9 +1,0 @@
-<div class="thumbnail">
-  <%= link_to(image_tag("land_projects/#{@plot.housing_project.subdomain}/#{document}_cover.png", alt: t("views.plots._roanparkphase1_thumbnail.copy.#{document}_html"), title: t("views.plots._roanparkphase1_thumbnail.copy.#{document}_html")), asset_path("land_projects/#{@plot.housing_project.subdomain}/#{document}.pdf"), target: "_blank") %>
-  <div class="caption">
-    <p>
-      <%= t("views.plots._roanparkphase1_thumbnail.copy.#{document}_html") %><br />
-      <%= link_to t("views.plots._roanparkphase1.links.download_pdf"), asset_path("land_projects/#{@plot.housing_project.subdomain}/#{document}.pdf"), target: "_blank" %>
-    </p>
-  </div>
-</div>

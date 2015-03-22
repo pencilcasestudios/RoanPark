@@ -1,0 +1,17 @@
+<%=
+	link_to(
+		image_tag(
+			"land_projects/#{@plot.housing_project.subdomain}/#{document}_cover.png",
+			alt: t("views.plots._thumbnail.copy.#{document}_html"),
+			title: t("views.plots._thumbnail.copy.#{document}_html"),
+			class: "img-responsive center-block"),
+			asset_path(
+				"land_projects/#{@plot.housing_project.subdomain}/#{document}.pdf"
+			),
+		target: "_blank"
+	)
+%>
+<p class="caption">
+	<%= t("views.plots._thumbnail.copy.#{document}_html") %><br />
+	<%= link_to t("views.plots.show.links.download_pdf"), asset_path("land_projects/#{@plot.housing_project.subdomain}/#{document}.pdf"), target: "_blank" %>
+</p>
