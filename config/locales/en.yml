@@ -112,6 +112,21 @@ en:
 
 
     plots:
+      _thumbnail:
+        copy:
+          business_name_registration_certificate_html: Business Name Registration Certificate
+          general_plan_html: General Plan
+          lusaka_province_planning_authority_numbering_html: Lusaka Province Planning Authority Numbering
+          lusaka_province_planning_authority_subdivision_approval_html: Lusaka Province Planning Authority Subdivision Approval
+          ministry_of_lands_marking_off_from_main_title_html: Ministry of lands marking off from the main title
+          rda_external_road_expression_of_interest_html: RDA External Road Expresssion of Interest
+          zesco_power_grid_design_approval_html: ZESCO Power Grid Design Approval
+          zesco_power_grid_commissioning_html: ZESCO Power Grid Commissioning
+          rda_external_road_invitation_for_bids_html: RDA External Road Invitation for Bids
+          topographical_plan_html: Topographical Plan
+      _title_deed:
+        copy:
+          title_deed: "%{plot} Title Deed"
       show:
         copy:
           area: Area of the plot
@@ -119,11 +134,18 @@ en:
           plot_area: "%{plot_area_in_hectares} hectares (%{plot_area_in_acres} acres)"
           plot_beacon: "%{plot} beacon"
           plot_name: "%{plot}"
+          power_line_over_plot: "Power line over plot"
           availability:
             "false": "No"
             "true": "Yes"
         headings:
           pictures: Pictures
+          general_plan: General Plan
+          power: Power
+          roads: Roads
+          statutory_approvals: Statutory Approvals
+        links:
+          download_pdf: Download the PDF
         title: "%{project_name} | %{plot_name}"
 
 

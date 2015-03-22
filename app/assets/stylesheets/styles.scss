@@ -4,9 +4,18 @@
 
 
 
+br {
+	&.spacer {
+		margin-top: 1em;
+		padding: 1em;
+	}
+}
+
+
 nav {
 	margin-top: 1em;
 }
+
 
 footer {
 	margin-top: 3em;
@@ -37,6 +46,7 @@ footer {
 		}
 	}
 }
+
 
 .translation_missing {
 	background: $red;
