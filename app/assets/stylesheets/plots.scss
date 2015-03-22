@@ -55,7 +55,7 @@ h2 {
 	}
 }
 
-#advertising {
+#brochure {
 	img {
 		&.img-responsive {
 			border: 1px solid $grey;
@@ -70,3 +70,12 @@ h2 {
 		}
 	}
 }
+
+#advertising {
+	img {
+		&.img-responsive {
+			border: 1px solid $grey;
+		}
+	}
+}
+
