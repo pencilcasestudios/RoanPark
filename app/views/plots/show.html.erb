@@ -122,7 +122,7 @@
 	<!-- General plan -->
 	<div class="col-lg-4">
 		<div class="row">
-			<section id="general_plan" class="section">
+			<section id="general_plan">
 
 				<h2><%= t("views.plots.show.headings.general_plan") %></h2>
 
@@ -141,7 +141,7 @@
 	<!-- Roads -->
 	<div class="col-lg-4">
 		<div class="row">
-			<section id="roads" class="section">
+			<section id="roads">
 
 				<h2><%= t("views.plots.show.headings.roads") %></h2>
 
@@ -160,7 +160,7 @@
 	<!-- Power -->
 	<div class="col-lg-4">
 		<div class="row">
-			<section id="power" class="section">
+			<section id="power">
 
 				<h2><%= t("views.plots.show.headings.power") %></h2>
 
@@ -187,5 +187,42 @@
 
 
 <div class="row">
+
 	<%= render "tree_description" %>
+
+	<!-- Brochure -->
+	<div class="col-lg-6">
+
+		<section id="advertising">
+
+			<h2><%= t("views.plots.show.headings.brochure") %></h2>
+
+			<div class="row">
+				<div class="col-lg-4">
+					<%= render "thumbnail", document: "brochure_advertisement" %>
+				</div>
+				<div class="col-lg-4">
+					<%= render "thumbnail", document: "brochure_location" %>
+				</div>
+				<div class="col-lg-4">
+					<%= render "thumbnail", document: "brochure_plots" %>
+				</div>
+			</div><!-- /.row -->
+
+			<div class="row">
+				<div class="col-lg-4">
+					<%= render "thumbnail", document: "brochure_team" %>
+				</div>
+				<div class="col-lg-4">
+					<%= render "thumbnail", document: "brochure_contacts" %>
+				</div>
+				<div class="col-lg-4">
+					<!-- Empty row -->
+				</div>
+			</div><!-- /.row -->
+
+		</section><!-- /#advertising -->
+	</div>
+	<!-- /Brochure -->
+
 </div><!-- /.row -->

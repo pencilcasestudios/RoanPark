@@ -121,6 +121,11 @@ en:
           ministry_of_lands_marking_off_from_main_title_html: Ministry of lands marking off from the main title
           rda_external_road_expression_of_interest_html: RDA External Road Expresssion of Interest
           zesco_power_grid_design_approval_html: ZESCO Power Grid Design Approval
+          brochure_advertisement_html: Advertisement from Brochure
+          brochure_location_html: Location from Brochure
+          brochure_plots_html: Plots from Brochure
+          brochure_team_html: Team from Brochure
+          brochure_contacts_html: Contacts from Brochure
           zesco_power_grid_commissioning_html: ZESCO Power Grid Commissioning
           rda_external_road_invitation_for_bids_html: RDA External Road Invitation for Bids
           topographical_plan_html: Topographical Plan
@@ -492,6 +497,7 @@ en:
           pictures: Pictures
           general_plan: General Plan
           power: Power
+          brochure: Brochure
           roads: Roads
           statutory_approvals: Statutory Approvals
         links:
