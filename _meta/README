@@ -110,6 +110,7 @@ git tag "`date +virtual_%Y-%m-%d_%H%M%S`"
 git push bitbucket master
 git push origin master --tags
 git push bitbucket master --tags
+notify-send "Virtual stage deployed"
 
 # STAGING
 cd ~/Code/RoanPark
@@ -122,6 +123,7 @@ git tag "`date +staging_%Y-%m-%d_%H%M%S`"
 git push bitbucket master
 git push origin master --tags
 git push bitbucket master --tags
+notify-send "Staging stage deployed"
 
 # PRODUCTION
 cd ~/Code/RoanPark
@@ -134,6 +136,7 @@ git tag "`date +production_%Y-%m-%d_%H%M%S`"
 git push bitbucket master
 git push origin master --tags
 git push bitbucket master --tags
+notify-send "Production stage deployed"
 
 
 
@@ -332,6 +335,7 @@ cp .env /var/Apps/RoanPark/virtual/shared/
 exit
 
 # From the development machine
+cd ~/Code/RoanPark/
 cap virtual deploy:check
 cap virtual deploy
 
@@ -537,6 +541,7 @@ cp .env /var/Apps/RoanPark/staging/shared/
 exit
 
 # From the development machine
+cd ~/Code/RoanPark/
 cap staging deploy:check
 cap staging deploy
 
@@ -742,6 +747,7 @@ cp .env /var/Apps/RoanPark/production/shared/
 exit
 
 # From the development machine
+cd ~/Code/RoanPark/
 cap production deploy:check
 cap production deploy
 
