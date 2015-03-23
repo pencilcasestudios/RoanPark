@@ -8,22 +8,18 @@
 	header {
 		&.welcome {
 			background-color: $black_semi_transparent;
-			padding: 1em;
+			padding: 2em;
 			text-align: right;
 
 			h1 {
 				font-weight: bold;
-				color: #eeeeee;
-				text-shadow: 1px 1px #333333;
+				color: $white_smoke;
+				text-shadow: 1px 1px $black;
 			}
 
 			p {
-				color: #eeeeee;
-				text-shadow: 1px 1px #333333;
-			}
-
-			a {
-				color: #eeeeee;
+				color: $white_smoke;
+				text-shadow: 1px 1px $black;
 			}
 		}
 	}

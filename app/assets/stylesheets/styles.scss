@@ -4,6 +4,16 @@
 
 
 
+a {
+	&.btn {
+		color: $white_faded;
+
+		&:hover {
+			color: $white;
+		}
+	}
+}
+
 br {
 	&.spacer {
 		margin-top: 1em;
@@ -45,6 +55,8 @@ footer {
 		}
 	}
 }
+
+
 
 
 .translation_missing {

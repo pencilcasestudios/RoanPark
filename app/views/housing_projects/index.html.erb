@@ -12,12 +12,13 @@
 <div class="row">
   <div class="col-lg-12">
     <% @housing_projects.each do |housing_project| %>
-      <section class="<%= housing_project.subdomain %>">
-        <hr />
+      <section class="<%= housing_project.subdomain %> plot details">
 
         <h2><%= housing_project.name %></h2>
 
         <p><%= housing_project.summary %></p>
+
+        <%= t("views.housing_projects.index.copy.hover_over_html") %>
 
         <%= image_tag("land_projects/#{housing_project.subdomain}/#{housing_project.plot_layout_image}",  width: "#{housing_project.image_map_width}", height: "#{housing_project.image_map_height}", class: "img-responsive center-block", usemap: "#plot_layout_map_#{ housing_project.id }") %>
 
@@ -48,4 +49,3 @@
     $('img[usemap]').rwdImageMaps();
   });
 </script>
-
