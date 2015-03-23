@@ -23,7 +23,6 @@ footer {
 	padding-top: 1em;
 	padding-bottom: 1em;
 
-	background-color:  $black_semi_transparent;
 	color: $grey;
 
 	p {
@@ -32,7 +31,7 @@ footer {
 
 			&:hover {
 				background: transparent;
-				color: $yellow;
+				color: $black;
 				text-decoration: none;
 			}
 
@@ -40,7 +39,7 @@ footer {
 				color: $grey;
 
 				&:hover {
-					color: $yellow;
+					color: $black;
 				}
 			}
 		}

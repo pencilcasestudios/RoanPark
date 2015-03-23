@@ -27,4 +27,11 @@
 			}
 		}
 	}
+
+	// Don't show the footer on the welcome page
+	&.home {
+		footer {
+			display: none;
+		}
+	}
 }
