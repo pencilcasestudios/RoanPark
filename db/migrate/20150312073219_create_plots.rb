@@ -1,8 +1,8 @@
 class CreatePlots < ActiveRecord::Migration
   def change
     create_table :plots do |t|
-      t.references :housing_project
-      t.references :user
+      t.references :housing_project, index: true, foreign_key: true
+      t.references :user, index: true, foreign_key: true
 
       t.boolean :is_available
       t.decimal :area
