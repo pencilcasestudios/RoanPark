@@ -42,6 +42,7 @@ describe "Image assets" do
 		expect(File.exist?("app/assets/images/land_projects/team/dominic_ambulaya.png")).to be true
 		expect(File.exist?("app/assets/images/land_projects/team/johan_p_richter.png")).to be true
 		expect(File.exist?("app/assets/images/land_projects/team/kabwe_katayi.png")).to be true
+		expect(File.exist?("app/assets/images/land_projects/team/kasemuka_chirwa.png")).to be true
 	end
 end
 
