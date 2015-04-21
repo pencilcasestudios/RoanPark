@@ -38,8 +38,9 @@ bundle install
 
 # Bundle update
 cd ~/Code/RoanPark
-bundle update
+bundle update --verbose
 gem cleanup
+notify-send "Bundle updated"
 
 
 # Guard for testing
