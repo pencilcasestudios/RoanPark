@@ -90,6 +90,11 @@ en:
           residential_estate: Residential estate details
           title:
             residential_estate: "View location, layout, availability and pricing details"
+        meta:
+          alt:
+            roan_park_banner: Your opportunity to create an inheritance and leave a legacy awaits
+          title:
+            roan_park_banner: Your opportunity to create an inheritance and leave a legacy awaits
         title: About Us
 
       contact:

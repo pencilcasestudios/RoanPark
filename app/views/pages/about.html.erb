@@ -11,15 +11,14 @@
 
 
 <div class="row">
-	<div class="col-lg-8 col-md-8">
+	<div class="col-lg-6 col-md-6">
 		<%= t("views.pages.about.copy.overview_html") %>
 
 		<br />
 
 		<p><%= link_to t("views.pages.about.link.residential_estate"), housing_projects_path, class: "btn btn-primary btn-lg", role: "button", title: t("views.pages.about.link.title.residential_estate") %></p>
 	</div>
-	<div class="col-lg-4 col-md-4">
-		<p><%= image_tag "land_projects/roanparkphase1/brochure_advertisement_cover.png", class: "img-responsive center-block" %></p>
-		<p><%= image_tag "land_projects/roanparkphase2/brochure_advertisement_cover.png", class: "img-responsive center-block" %></p>
+	<div class="col-lg-6 col-md-6">
+		<p><%= image_tag "land_projects/roanparkphase2/roan_park_banner-600x301.jpg", class: "img-responsive center-block", alt: t("views.pages.about.meta.alt.roan_park_banner"), title: t("views.pages.about.meta.title.roan_park_banner") %></p>
 	</div>
 </div><!-- /.row -->
