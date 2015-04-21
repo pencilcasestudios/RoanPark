@@ -1,23 +1,34 @@
-TODO - Guard
-TODO - Rspec
-TODO - Spring
-TODO - Asset tests
-TODO - Welcome page
-TODO - Internationalisation (with High Voltage)
-TODO - URL check "roanpark.co.zm"
-TODO - Users
-TODO - Plots
+TODO - Add the new Roan Park office to Google Maps
 TODO - Administration
-TODO - Housing Projects
-TODO - Seed database
-TODO - Roman Numerals gem
+TODO - Asset tests
 TODO - Figure out how to access the Rails console in production (do I need to regenerate binstubs?)
 TODO - Get the current Roan Park project contact details (Foxdale Court)
-TODO - Add the new Roan Park office to Google Maps
-TODO - SEO metatags for individual pages (Ref: https://github.com/kpumuk/meta-tags)
-TODO - Responsive image resize for the brochure covers on the About page
-TODO - Link the brochure covers to the PDF brochures for download
-TODO - Reverse the Housing Project order so that Roan Park phase 2 shows first (since it still has available plots)
-TODO - Responsive design (optimisation for smaller screens)
+TODO - Guard
+TODO - Has 1 Kalongwe been split?
+TODO - Has 1 Nzilu been split?
+TODO - Has 10 Mbawa been split?
+TODO - Has 11 Kalongwe been split?
+TODO - Has 12 Mbawa been split?
+TODO - Has 2 Kalongwe been split?
+TODO - Has 2 Mbawa been split?
+TODO - Has 2 Nzilu been split?
+TODO - Has 9 Kalongwe been split?
+TODO - Housing Projects
 TODO - I need roan_park_banner-2141x1075.jpg for Phase 1
+TODO - Internationalisation (with High Voltage)
+TODO - Link the brochure covers to the PDF brochures for download
+TODO - Mpasa Avenue 	44	2	Commercial - Not available in seeds (because it is commercial?)
+TODO - Mungosya Avenue 	47	2	Commercial - Not available in seeds (because it is commercial?)
+TODO - Plots
+TODO - Responsive design (optimisation for smaller screens)
+TODO - Responsive image resize for the brochure covers on the About page
+TODO - Reverse the Housing Project order so that Roan Park phase 2 shows first (since it still has available plots)
+TODO - Roman Numerals gem
+TODO - Rspec
+TODO - Seed database
+TODO - SEO metatags for individual pages (Ref: https://github.com/kpumuk/meta-tags)
 TODO - Some way to display the levy paid each year per plot
+TODO - Spring
+TODO - URL check "roanpark.co.zm"
+TODO - Users
+TODO - Welcome page

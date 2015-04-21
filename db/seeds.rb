@@ -553,13 +553,13 @@ Plot.create( area: 2.2, beacon_code: rand(1000), cash_price: 0, designation: "co
 Plot.create( area: 2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [1570,491,1666,534], installment_amount: 0, street_address: "3 Nzilu Avenue", term_deposit_amount: 0, total_installments: 0, is_available: true, )
 
 # Plot 4/135
-Plot.create( area: 2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [1693,492,1790,534], installment_amount: 0, street_address: "4 Nzilu Avenue", term_deposit_amount: 0, total_installments: 0, is_available: true, )
+Plot.create( area: 2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [1693,492,1790,534], installment_amount: 0, street_address: "4 Nzilu Avenue", term_deposit_amount: 0, total_installments: 0, is_available: false, )
 
 # Plot 5/135
 Plot.create( area: 2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [1570,441,1667,487], installment_amount: 0, street_address: "5 Nzilu Avenue", term_deposit_amount: 0, total_installments: 0, is_available: true, )
 
 # Plot 6/135
-Plot.create( area: 2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [1693,443,1790,487], installment_amount: 0, street_address: "6 Nzilu Avenue", term_deposit_amount: 0, total_installments: 0, is_available: true, )
+Plot.create( area: 2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [1693,443,1790,487], installment_amount: 0, street_address: "6 Nzilu Avenue", term_deposit_amount: 0, total_installments: 0, is_available: false, )
 
 # Plot 7/135
 Plot.create( area: 2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [1570,399,1667,438], installment_amount: 0, street_address: "7 Nzilu Avenue", term_deposit_amount: 0, total_installments: 0, is_available: true, )
@@ -574,25 +574,25 @@ Plot.create( area: 2.2, beacon_code: rand(1000), cash_price: 0, designation: "co
 Plot.create( area: 2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "poly", image_map_coordinates: [1801,395,1770,355,1686,355,1686,394], installment_amount: 0, street_address: "10 Nzilu Avenue", term_deposit_amount: 0, total_installments: 0, is_available: false, )
 
 # Plot 11/135
-Plot.create( area: 2.2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [1570,307,1674,346], installment_amount: 0, street_address: "11 Nzilu Avenue", term_deposit_amount: 0, total_installments: 0, is_available: false, )
+Plot.create( area: 2.2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [1570,307,1674,346], installment_amount: 0, street_address: "11 Nzilu Avenue", term_deposit_amount: 0, total_installments: 0, is_available: true, )
 
 # Plot 12/135
-Plot.create( area: 2.2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "poly", image_map_coordinates: [1768,345,1686,345,1685,248], installment_amount: 0, street_address: "12 Nzilu Avenue", term_deposit_amount: 0, total_installments: 0, is_available: false, )
+Plot.create( area: 2.2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "poly", image_map_coordinates: [1768,345,1686,345,1685,248], installment_amount: 0, street_address: "12 Nzilu Avenue", term_deposit_amount: 0, total_installments: 0, is_available: true, )
 
 # Plot 13/135
-Plot.create( area: 2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [1571,260,1674,303], installment_amount: 0, street_address: "13 Nzilu Avenue", term_deposit_amount: 0, total_installments: 0, is_available: false, )
+Plot.create( area: 2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [1571,260,1674,303], installment_amount: 0, street_address: "13 Nzilu Avenue", term_deposit_amount: 0, total_installments: 0, is_available: true, )
 
 # Plot 14/135
-Plot.create( area: 1.4, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "poly", image_map_coordinates: [1670,214,1733,214,1781,255,1706,255], installment_amount: 0, street_address: "14 Nzilu Avenue", term_deposit_amount: 0, total_installments: 0, is_available: false, )
+Plot.create( area: 1.4, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "poly", image_map_coordinates: [1670,214,1733,214,1781,255,1706,255], installment_amount: 0, street_address: "14 Nzilu Avenue", term_deposit_amount: 0, total_installments: 0, is_available: true, )
 
 # Plot 15/135
-Plot.create( area: 2.1, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "poly", image_map_coordinates: [1674,254,1674,244,1648,213,1569,212,1570,253], installment_amount: 0, street_address: "15 Nzilu Avenue", term_deposit_amount: 0, total_installments: 0, is_available: false, )
+Plot.create( area: 2.1, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "poly", image_map_coordinates: [1674,254,1674,244,1648,213,1569,212,1570,253], installment_amount: 0, street_address: "15 Nzilu Avenue", term_deposit_amount: 0, total_installments: 0, is_available: true, )
 
 # Plot 16/135
-Plot.create( area: 2.9, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "poly", image_map_coordinates: [1499,22,1661,207,1722,210], installment_amount: 0, street_address: "16 Nzilu Avenue", term_deposit_amount: 0, total_installments: 0, is_available: false, )
+Plot.create( area: 2.9, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "poly", image_map_coordinates: [1499,22,1661,207,1722,210], installment_amount: 0, street_address: "16 Nzilu Avenue", term_deposit_amount: 0, total_installments: 0, is_available: true, )
 
 # Plot 17/135
-Plot.create( area: 2.1, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "poly", image_map_coordinates: [1570,120,1648,208,1571,207], installment_amount: 0, street_address: "17 Nzilu Avenue", term_deposit_amount: 0, total_installments: 0, is_available: false, )
+Plot.create( area: 2.1, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "poly", image_map_coordinates: [1570,120,1648,208,1571,207], installment_amount: 0, street_address: "17 Nzilu Avenue", term_deposit_amount: 0, total_installments: 0, is_available: true, )
 
 
 
@@ -602,10 +602,10 @@ Plot.create( area: 2.1, beacon_code: rand(1000), cash_price: 0, designation: "co
 Plot.create( area: 2.4, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "poly", image_map_coordinates: [1795,534,1796,442,1855,443,1911,507,1879,534], installment_amount: 0, street_address: "1 Manga Drive", term_deposit_amount: 0, total_installments: 0, is_available: false, )
 
 # Plot 19/135
-Plot.create( area: 5, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "poly", image_map_coordinates: [1793,354,1917,499,1991,433,1895,353], installment_amount: 0, street_address: "2 Manga Drive", term_deposit_amount: 0, total_installments: 0, is_available: false, )
+Plot.create( area: 5, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "poly", image_map_coordinates: [1793,354,1917,499,1991,433,1895,353], installment_amount: 0, street_address: "2 Manga Drive", term_deposit_amount: 0, total_installments: 0, is_available: true, )
 
 # Plot 20/135
-Plot.create( area: 4, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "poly", image_map_coordinates: [1707,259,1784,346,1888,348,1782,260], installment_amount: 0, street_address: "3 Manga Drive", term_deposit_amount: 0, total_installments: 0, is_available: false, )
+Plot.create( area: 4, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "poly", image_map_coordinates: [1707,259,1784,346,1888,348,1782,260], installment_amount: 0, street_address: "3 Manga Drive", term_deposit_amount: 0, total_installments: 0, is_available: true, )
 
 
 
@@ -621,7 +621,7 @@ Plot.create( area: 2, beacon_code: rand(1000), cash_price: 0, designation: "corn
 Plot.create( area: 2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [909,588,1008,627], installment_amount: 0, street_address: "3 Chikungu Drive", term_deposit_amount: 0, total_installments: 0, is_available: false, )
 
 # Plot 24/135
-Plot.create( area: 2.1, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [1015,588,1115,627], installment_amount: 0, street_address: "4 Chikungu Drive", term_deposit_amount: 0, total_installments: 0, is_available: true, )
+Plot.create( area: 2.1, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [1015,588,1115,627], installment_amount: 0, street_address: "4 Chikungu Drive", term_deposit_amount: 0, total_installments: 0, is_available: false, )
 
 # Plot 25/135
 Plot.create( area: 2.1, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [1120,588,1226,625], installment_amount: 0, street_address: "5 Chikungu Drive", term_deposit_amount: 0, total_installments: 0, is_available: false, )
@@ -722,7 +722,7 @@ Plot.create( area: 2.1, beacon_code: rand(1000), cash_price: 0, designation: "co
 Plot.create( area: 2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [1121,540,1222,579], installment_amount: 0, street_address: "1 Mbawa Avenue", term_deposit_amount: 0, total_installments: 0, is_available: false, )
 
 # Plot 55/135
-Plot.create( area: 2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [1233,541,1337,579], installment_amount: 0, street_address: "2 Mbawa Avenue", term_deposit_amount: 0, total_installments: 0, is_available: false, )
+Plot.create( area: 2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [1233,541,1337,579], installment_amount: 0, street_address: "2 Mbawa Avenue", term_deposit_amount: 0, total_installments: 0, is_available: true, )
 
 # Plot 56/135
 Plot.create( area: 2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [1122,493,1213,533], installment_amount: 0, street_address: "3 Mbawa Avenue", term_deposit_amount: 0, total_installments: 0, is_available: false, )
@@ -810,7 +810,7 @@ Plot.create( area: 2, beacon_code: rand(1000), cash_price: 0, designation: "corn
 Plot.create( area: 2.2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [1014,353,1116,394], installment_amount: 0, street_address: "10 Pulupulu Avenue", term_deposit_amount: 0, total_installments: 0, is_available: true, )
 
 # Plot 83/135
-Plot.create( area: 2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [901,307,1003,346], installment_amount: 0, street_address: "11 Pulupulu Avenue", term_deposit_amount: 0, total_installments: 0, is_available: true, )
+Plot.create( area: 2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [901,307,1003,346], installment_amount: 0, street_address: "11 Pulupulu Avenue", term_deposit_amount: 0, total_installments: 0, is_available: false, )
 
 # Plot 84/135
 Plot.create( area: 2.2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [1016,307,1116,347], installment_amount: 0, street_address: "12 Pulupulu Avenue", term_deposit_amount: 0, total_installments: 0, is_available: true, )
@@ -930,7 +930,7 @@ Plot.create( area: 2, beacon_code: rand(1000), cash_price: 0, designation: "corn
 Plot.create( area: 2.2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [241,772,344,810], installment_amount: 0, street_address: "35 Mpasa Avenue", term_deposit_amount: 0, total_installments: 0, is_available: false, )
 
 # Plot 119/136
-Plot.create( area: 2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [356,771,456,810], installment_amount: 0, street_address: "36 Mpasa Avenue", term_deposit_amount: 0, total_installments: 0, is_available: true, )
+Plot.create( area: 2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [356,771,456,810], installment_amount: 0, street_address: "36 Mpasa Avenue", term_deposit_amount: 0, total_installments: 0, is_available: false, )
 
 # Plot 120/136
 Plot.create( area: 2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [242,723,343,765], installment_amount: 0, street_address: "37 Mpasa Avenue", term_deposit_amount: 0, total_installments: 0, is_available: false, )
@@ -957,13 +957,13 @@ Plot.create( area: 2.2, beacon_code: rand(1000), cash_price: 0, designation: "co
 #Plot.create( area: 0.9, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "poly", image_map_coordinates: [242,556,242,581,345,577,347,512], installment_amount: 0, street_address: "44 Mpasa Avenue", term_deposit_amount: 0, total_installments: 0, is_available: true, )
 
 # Plot 128/136
-Plot.create( area: 0.9, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "poly", image_map_coordinates: [242,556,242,581,345,577,347,512], installment_amount: 0, street_address: "45 Mpasa Avenue", term_deposit_amount: 0, total_installments: 0, is_available: false, )
+Plot.create( area: 0.9, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "poly", image_map_coordinates: [242,556,242,581,345,577,347,512], installment_amount: 0, street_address: "45 Mpasa Avenue", term_deposit_amount: 0, total_installments: 0, is_available: true, )
 
 # Plot 129/136
 Plot.create( area: 2, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "rect", image_map_coordinates: [354,539,454,575], installment_amount: 0, street_address: "46 Mpasa Avenue", term_deposit_amount: 0, total_installments: 0, is_available: false, )
 
 # Plot 130/136
-Plot.create( area: 0.9, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "poly", image_map_coordinates: [455,466,453,534,350,535,354,509], installment_amount: 0, street_address: "48 Mpasa Avenue", term_deposit_amount: 0, total_installments: 0, is_available: false, )
+Plot.create( area: 0.9, beacon_code: rand(1000), cash_price: 0, designation: "corner", housing_project: h, image_map_shape: "poly", image_map_coordinates: [455,466,453,534,350,535,354,509], installment_amount: 0, street_address: "48 Mpasa Avenue", term_deposit_amount: 0, total_installments: 0, is_available: true, )
 
 
 
