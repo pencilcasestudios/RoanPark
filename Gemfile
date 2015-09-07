@@ -120,7 +120,7 @@ group :development, :test do
 	gem 'capistrano-rails', '~> 1.1.2'
 
 	# For the `deploy:restart` hook for passenger applications
-	gem 'capistrano-passenger', '~> 0.0.2'
+	gem 'capistrano-passenger', '~> 0.1.1'
 
 	# Use RVM with Capistrano (Capistrano version 3 or higher)
 	gem 'rvm1-capistrano3', '~> 1.3.2.2', require: false
