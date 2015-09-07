@@ -76,7 +76,7 @@ gem 'roman-numerals', '~> 0.3.0'
 
 
 # Static pages
-gem 'high_voltage', '~> 2.2.1'
+gem 'high_voltage', '~> 2.4.0'
 
 # Meta tags
 gem 'meta-tags', '~> 2.0.0'
