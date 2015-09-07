@@ -67,13 +67,8 @@ gem 'dotenv-rails', '~> 2.0.0'
 # Decimals Roman Numerals
 gem 'roman-numerals', '~> 0.3.0'
 
-
-
-
-
-
-
-
+# For invoice generation
+gem 'git_time_extractor', '~> 0.3.2', require: false
 
 # Static pages
 gem 'high_voltage', '~> 2.4.0'
