@@ -3,6 +3,11 @@ source 'https://rubygems.org'
 
 
 
+
+
+
+
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 4.2.0'
 
@@ -13,9 +18,6 @@ gem 'rails', '~> 4.2.0'
 
 
 
-
-# Bundler
-gem 'bundler', '~> 1.9.4'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
@@ -88,10 +90,10 @@ gem 'meta-tags', '~> 2.0.0'
 
 # Rails Assets
 # Ref: https://rails-assets.org/
-#gem 'bundler', '>= 1.7.0'
+gem 'bundler', '~> 1.10.6'
 
 source 'https://rails-assets.org' do
-	# Bootstrap - UI framework
+  # Bootstrap - UI framework
   gem 'rails-assets-bootstrap'
 
   # Vegas - full-screen background images
