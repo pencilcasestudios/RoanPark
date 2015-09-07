@@ -50,7 +50,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.10'
 
 # Image optimisation tool
-gem 'image_optim', '~> 0.20.2', require: false
+gem 'image_optim', '~> 0.21.0', require: false
+gem 'image_optim_pack', '~> 0.2.1.20150808', require: false
 
 # App settings in a config.yml file
 gem 'settingslogic', '~> 2.0.9'
@@ -114,7 +115,6 @@ group :development, :test do
 
 	# Access an IRB console on exception pages or by using <%= console %> in views
 	gem 'web-console', '~> 2.0'
-
 
 	# Use Capistrano for deployment
 	gem 'capistrano-rails', '~> 1.1.2'
