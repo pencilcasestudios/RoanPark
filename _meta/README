@@ -2,13 +2,13 @@
 # Development setup
 # Setting up the development environment after a fresh repository clone
 #----------------------------------------------------------------------
-cd ~/Code/RoanPark
+cd ~/Code/Rails/RoanPark
 cp _meta/examples/database/database.yml config # Setup the database
 cp _meta/examples/config/config.yml config # Setup the configuration files
 cp -r _meta/examples/capistrano/deploy* config # Setup the capistrano deployment recipe
 
 # Set up symbolic link to externlised assets
-cd ~/Code/RoanPark/app/assets
+cd ~/Code/Rails/RoanPark/app/assets
 ln -nfs ~/Dropbox/Roan\ Park/Externalised\ Assets/Roan\ Park\ Website/Images/ images
 ln -nfs ~/Dropbox/Roan\ Park/Externalised\ Assets/Roan\ Park\ Website/PDFs/ pdfs
 
@@ -32,19 +32,19 @@ git push production
 
 
 # Bundle install
-cd ~/Code/RoanPark
+cd ~/Code/Rails/RoanPark
 bundle install
 
 
 # Bundle update
-cd ~/Code/RoanPark
+cd ~/Code/Rails/RoanPark
 bundle update --verbose
 gem cleanup
 notify-send "Bundle updated"
 
 
 # Guard for testing
-cd ~/Code/RoanPark
+cd ~/Code/Rails/RoanPark
 rake db:drop
 rake db:setup
 rake db:test:prepare
@@ -55,13 +55,13 @@ bundle exec guard
 
 # Running the Application in development
 #=======================================
-cd ~/Code/RoanPark
+cd ~/Code/Rails/RoanPark
 rails server --port=3100 --binding=roanpark.dev # In one terminal window - to run the application
 
-cd ~/Code/RoanPark
+cd ~/Code/Rails/RoanPark
 rake jobs:work # In another terminal window - to run delayed job
 
-cd ~/Code/RoanPark
+cd ~/Code/Rails/RoanPark
 rails console # In another terminal window - to manage administrators
 
 # View the site in a browser by visiting
@@ -88,7 +88,7 @@ u.admin?
 # Gem management
 #===============
 # MAINTAIN GEM BUNDLE
-cd ~/Code/RoanPark
+cd ~/Code/Rails/RoanPark
 bundle update
 gem cleanup
 
@@ -101,7 +101,7 @@ gem list | cut -d" " -f1 | xargs gem uninstall -aIx
 # Continuous Application Deployment
 #==================================
 # VIRTUAL
-cd ~/Code/RoanPark
+cd ~/Code/Rails/RoanPark
 git checkout master
 git merge dev
 git push
@@ -114,7 +114,7 @@ git push bitbucket master --tags
 notify-send "Virtual stage deployed"
 
 # STAGING
-cd ~/Code/RoanPark
+cd ~/Code/Rails/RoanPark
 git checkout master
 git merge dev
 git push
@@ -127,7 +127,7 @@ git push bitbucket master --tags
 notify-send "Staging stage deployed"
 
 # PRODUCTION
-cd ~/Code/RoanPark
+cd ~/Code/Rails/RoanPark
 git checkout master
 git merge dev
 git push
@@ -213,7 +213,7 @@ exit
 
 # Push to the Git repository:
 # From the development machine:
-cd ~/Code/RoanPark
+cd ~/Code/Rails/RoanPark
 git remote add virtual deploy@rails.vm:/var/Repositories/Git/RoanPark.git
 git push virtual master # or git push virtual
 
@@ -232,7 +232,7 @@ sudo chown deploy:deploy /var/AssetsVault
 
 # Configure nginx
 # On the development machine
-cd ~/Code/RoanPark/_meta/examples/nginx
+cd ~/Code/Rails/RoanPark/_meta/examples/nginx
 scp nginx.roanpark.virtual.conf vladimir@rails.vm:~/roanpark.virtual.conf
 
 
@@ -293,16 +293,16 @@ create database RoanPark_virtual_test;
 
 # Setup the YAML and .env configuration files:
 # From the development machine
-cd ~/Code/RoanPark/_meta/examples/config
+cd ~/Code/Rails/RoanPark/_meta/examples/config
 scp config.virtual.yml deploy@rails.vm:~/config.yml
 
-cd ~/Code/RoanPark/_meta/examples/database
+cd ~/Code/Rails/RoanPark/_meta/examples/database
 scp database.virtual.yml deploy@rails.vm:~/database.yml
 
-cd ~/Code/RoanPark/_meta/examples/env
+cd ~/Code/Rails/RoanPark/_meta/examples/env
 scp .env.virtual deploy@rails.vm:~/.env
 
-cd ~/Code/RoanPark/
+cd ~/Code/Rails/RoanPark/
 ssh deploy@rails.vm
 
 # From the virtual machine (as the deploy user)
@@ -316,7 +316,7 @@ exit
 # From the development machine
 # Capistrano steps for initial deployment
 # VIRTUAL MACHINE DEPLOYMENT
-cd ~/Code/RoanPark/
+cd ~/Code/Rails/RoanPark/
 git checkout master
 git merge dev
 git push
@@ -336,7 +336,7 @@ cp .env /var/Apps/RoanPark/virtual/shared/
 exit
 
 # From the development machine
-cd ~/Code/RoanPark/
+cd ~/Code/Rails/RoanPark/
 cap virtual deploy:check
 cap virtual deploy
 
@@ -419,7 +419,7 @@ exit
 
 # Push to the Git repository:
 # From the development machine:
-cd ~/Code/RoanPark
+cd ~/Code/Rails/RoanPark
 git remote add staging deploy@asher.vps:/var/Repositories/Git/RoanPark.git
 git push staging master # or git push staging
 
@@ -438,7 +438,7 @@ sudo chown deploy:deploy /var/AssetsVault
 
 # Configure nginx
 # On the development machine
-cd ~/Code/RoanPark/_meta/examples/nginx
+cd ~/Code/Rails/RoanPark/_meta/examples/nginx
 scp nginx.roanpark.clientcase.net.conf silumesii@asher.vps:~/roanpark.clientcase.net.conf
 
 
@@ -499,16 +499,16 @@ create database RoanPark_staging_test;
 
 # Setup the YAML and .env configuration files:
 # From the development machine
-cd ~/Code/RoanPark/_meta/examples/config
+cd ~/Code/Rails/RoanPark/_meta/examples/config
 scp config.clientcase.net.yml deploy@asher.vps:~/config.yml
 
-cd ~/Code/RoanPark/_meta/examples/database
+cd ~/Code/Rails/RoanPark/_meta/examples/database
 scp database.clientcase.net.yml deploy@asher.vps:~/database.yml
 
-cd ~/Code/RoanPark/_meta/examples/env
+cd ~/Code/Rails/RoanPark/_meta/examples/env
 scp .env.clientcase.net deploy@asher.vps:~/.env
 
-cd ~/Code/RoanPark/
+cd ~/Code/Rails/RoanPark/
 ssh deploy@asher.vps
 
 # From the staging machine (as the deploy user)
@@ -522,7 +522,7 @@ exit
 # From the development machine
 # Capistrano steps for initial deployment
 # VIRTUAL MACHINE DEPLOYMENT
-cd ~/Code/RoanPark/
+cd ~/Code/Rails/RoanPark/
 git checkout master
 git merge dev
 git push
@@ -542,7 +542,7 @@ cp .env /var/Apps/RoanPark/staging/shared/
 exit
 
 # From the development machine
-cd ~/Code/RoanPark/
+cd ~/Code/Rails/RoanPark/
 cap staging deploy:check
 cap staging deploy
 
@@ -625,7 +625,7 @@ exit
 
 # Push to the Git repository:
 # From the development machine:
-cd ~/Code/RoanPark
+cd ~/Code/Rails/RoanPark
 git remote add production deploy@gad.vps:/var/Repositories/Git/RoanPark.git
 git push production master # or git push production
 
@@ -644,7 +644,7 @@ sudo chown deploy:deploy /var/AssetsVault
 
 # Configure nginx
 # On the development machine
-cd ~/Code/RoanPark/_meta/examples/nginx
+cd ~/Code/Rails/RoanPark/_meta/examples/nginx
 scp nginx.roanpark.co.zm.conf silumesii@gad.vps:~/roanpark.co.zm.conf
 
 
@@ -705,16 +705,16 @@ create database RoanPark_production_test;
 
 # Setup the YAML and .env configuration files:
 # From the development machine
-cd ~/Code/RoanPark/_meta/examples/config
+cd ~/Code/Rails/RoanPark/_meta/examples/config
 scp config.roanpark.co.zm.yml deploy@gad.vps:~/config.yml
 
-cd ~/Code/RoanPark/_meta/examples/database
+cd ~/Code/Rails/RoanPark/_meta/examples/database
 scp database.roanpark.co.zm.yml deploy@gad.vps:~/database.yml
 
-cd ~/Code/RoanPark/_meta/examples/env
+cd ~/Code/Rails/RoanPark/_meta/examples/env
 scp .env.roanpark.co.zm deploy@gad.vps:~/.env
 
-cd ~/Code/RoanPark/
+cd ~/Code/Rails/RoanPark/
 ssh deploy@gad.vps
 
 # From the production machine (as the deploy user)
@@ -728,7 +728,7 @@ exit
 # From the development machine
 # Capistrano steps for initial deployment
 # VIRTUAL MACHINE DEPLOYMENT
-cd ~/Code/RoanPark/
+cd ~/Code/Rails/RoanPark/
 git checkout master
 git merge dev
 git push
@@ -748,7 +748,7 @@ cp .env /var/Apps/RoanPark/production/shared/
 exit
 
 # From the development machine
-cd ~/Code/RoanPark/
+cd ~/Code/Rails/RoanPark/
 cap production deploy:check
 cap production deploy
 
@@ -831,7 +831,7 @@ rvm @global do gem cleanup
 # Billing
 #--------
 # Use git_time_extractor
-cd ~/Code/RoanPark
+cd ~/Code/Rails/RoanPark
 git_time_extractor > ~/Desktop/roanpark_time_log.csv --initial-effort 15 --merge-effort 15 --session-duration 2
 
 
