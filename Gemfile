@@ -139,7 +139,7 @@ group :test do
 	gem 'factory_girl_rails', '~> 4.5.0'
 	gem 'guard-bundler', '~> 2.1.0'
 	gem 'guard-rspec', '~> 4.6.4'
-	gem 'rspec-rails', '~> 3.2.1'
+	gem 'rspec-rails', '~> 3.3.3'
 	gem 'spring-commands-rspec', '~> 1.0.4'
 end
 
